@@ -77,6 +77,13 @@ h2 {
 
 .screen-welcome {
 	text-align: center;
+	opacity: 1;
+
+	transition: opacity 0.3s cubic-bezier(0.28, 0.11, 0.32, 1);
+
+	&.animate-out {
+		opacity: 0;
+	}
 
 	label input {
 		border: 0;
