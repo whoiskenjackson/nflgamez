@@ -51,7 +51,7 @@ module.exports = function(grunt) {
 			},
 
 			handlebars: {
-                files: ['<%= config.target %>/css/**/{,*/}*.hbs'],
+                files: ['<%= config.target %>/js/**/{,*/}*.hbs'],
                 tasks: ['handlebars'],
                 options: {
                     reload: true,
