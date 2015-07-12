@@ -1,5 +1,7 @@
 define(function () {
 
+	var home = require('home/main');
+
 	return {
 		init: function(model) {
 
@@ -72,6 +74,7 @@ define(function () {
 		animateToHomeScreen: function() {
 			if(this.$el.find("#team").val() != "") {
 				this.$el.find(".screen-welcome").addClass("animate-out");
+				home.init(this.model);
 			}
 		}
 	};
