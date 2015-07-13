@@ -162,3 +162,64 @@ h2 {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+
+/* line 141, dashboard.scss */
+.screen-home {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+}
+/* line 151, dashboard.scss */
+.screen-home .header {
+  padding: 40px 0;
+  text-align: center;
+}
+/* line 155, dashboard.scss */
+.screen-home .header h1 {
+  font-weight: 100;
+  font-size: 40px;
+  color: #fff;
+}
+/* line 162, dashboard.scss */
+.screen-home .info-bar {
+  width: 100%;
+  background: #111;
+}
+/* line 166, dashboard.scss */
+.screen-home .info-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 172, dashboard.scss */
+.screen-home .info-bar li {
+  display: inline-block;
+  font-size: 25px;
+  padding: 10px;
+}
+/* line 178, dashboard.scss */
+.screen-home .info-bar a {
+  display: block;
+  padding: 5px 20px;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+}
+/* line 185, dashboard.scss */
+.screen-home .info-bar a:hover {
+  color: #45db5e;
+  background: #222;
+}
+/* line 192, dashboard.scss */
+.screen-home .screen-content {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  background: #fff;
+}

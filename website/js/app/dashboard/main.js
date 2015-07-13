@@ -38,7 +38,7 @@ define(function(require) {
 				var data = JSON.stringify(model);
 
 				localStorage.setItem("userData", data);
-				initDashboard(model);
+				initDashboard(data);
 			},
 			error: function(){
 				/* If user.json doesn't exist, create the userData model

@@ -1,9 +1,11 @@
-define(function () {
+define(function (require) {
 
-	var home = require('home/main');
+	var home;
 
 	return {
 		init: function(model) {
+
+			home = require('../home/main');
 
 			this.opt = {
 				scope: $("#main"),
