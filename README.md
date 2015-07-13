@@ -49,6 +49,8 @@ Pull in RSS Feeds from various news sources to give a variety of content on the 
 
 ####ToDo:
 
+* Pull in news feed from NFL.com.
 * Make news filterable based off of Favorite Team, Teams, and news networks.
 * Add functionality to tie news items to team logos and players.
 * Add functionality to possible to news items to player ID's and follow that player.
+
