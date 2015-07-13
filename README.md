@@ -80,3 +80,12 @@ All API's should be retrieved in JSON format.
 * Live Game Stats:
   * Player Week Stats: http://api.fantasy.nfl.com/v1/docs/service?serviceName=playersWeekStats
   * Player Week Highlight Videos: http://api.fantasy.nfl.com/v1/docs/service?serviceName=playersWeekVideos
+
+###Preferences
+
+Preferences will be a place for the user to keep track of all of their information and have the ability to export their user settings. The User will have the ability to:
+
+* Change User Name.
+* Change Favorite Team.
+* Adjust News Sources.
+* Export User Data.

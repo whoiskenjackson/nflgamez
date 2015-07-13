@@ -12,8 +12,6 @@ define(function (require) {
 			this.$el = this.opt.scope;
 			this.model = this.opt.model;
 
-			console.log(this.model);
-
 			this.renderTemplate();
 
 		},
