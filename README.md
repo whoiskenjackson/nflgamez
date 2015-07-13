@@ -22,6 +22,7 @@ For now the code base lives within the `website` directory. It should probably b
 
 * jQuery
 * RequireJS
+* LoDash
 * Handlebars
 * SCSS
 
@@ -47,10 +48,35 @@ Pull in RSS Feeds from various news sources to give a variety of content on the 
 * KFFL (Breaking News): http://www.kffl.com/printRSS.php/NFL
 * KFFL (General News): http://www.kffl.com/printRSS.php/NFL-NFL
 
-####ToDo:
+###Players Feed
 
-* Pull in news feed from NFL.com.
-* Make news filterable based off of Favorite Team, Teams, and news networks.
-* Add functionality to tie news items to team logos and players.
-* Add functionality to possible to news items to player ID's and follow that player.
+Pull in Player Data from NFL.com's API to give the user a variety of information used to keep track of all NFL Players and Players they would like to follow.
 
+####API's
+
+All API's should be retrieved in a JSON format.
+
+* Rankings: 
+  * Editor Rankings: http://api.fantasy.nfl.com/v1/docs/service?serviceName=playersEditorDraftRanks
+  * User Rankings: http://api.fantasy.nfl.com/v1/docs/service?serviceName=playersUserDraftRanks
+  * Editor Weekly Rankings: http://api.fantasy.nfl.com/v1/docs/service?serviceName=playersEditorWeekRanks
+* Player Data:
+  * Player Research Info: http://api.fantasy.nfl.com/v1/docs/service?serviceName=playersResearchInfo
+  * Player News (May not be needed): http://api.fantasy.nfl.com/v1/docs/service?serviceName=playersNews
+  * Individual Player Data: http://api.fantasy.nfl.com/v1/docs/service?serviceName=playersDetails
+* Player Stats:
+  * Scoring Leaders: http://api.fantasy.nfl.com/v1/docs/service?serviceName=playersScoringLeaders
+  * Player Stats (per Week): http://api.fantasy.nfl.com/v1/docs/service?serviceName=playersStats
+  * Player Stats Advanced (per Week): http://api.fantasy.nfl.com/v1/docs/service?serviceName=playersAdvanced
+
+###Game Center
+
+Game Center should pull in Live Data from NFL.com and update stats, charts, and player information.
+
+####API's
+
+All API's should be retrieved in JSON format.
+
+* Live Game Stats:
+  * Player Week Stats: http://api.fantasy.nfl.com/v1/docs/service?serviceName=playersWeekStats
+  * Player Week Highlight Videos: http://api.fantasy.nfl.com/v1/docs/service?serviceName=playersWeekVideos
