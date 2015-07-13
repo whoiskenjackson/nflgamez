@@ -88,4 +88,28 @@ Preferences will be a place for the user to keep track of all of their informati
 * Change User Name.
 * Change Favorite Team.
 * Adjust News Sources.
+* Add Fantasy Football Scoring Settings.
 * Export User Data.
+
+##Other Notes
+
+####API Stat ID's
+
+```
+1: Games
+2: Passing Attempts
+3: Passing Completions
+5: Passing Yards
+6: Passing Touchdowns
+7: Interceptions
+8: Sacks
+13: Rushing Attempts
+14: Rushing Yards
+15: Rushing Touchdowns
+20: Receptions
+21: Recieving Yards
+22: Revieving Touchdowns
+30: Fumble Lost?
+31: Fumbles
+70: Tackles
+```
