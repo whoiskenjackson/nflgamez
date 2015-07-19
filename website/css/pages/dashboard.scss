@@ -247,11 +247,55 @@ h2 {
 		margin: 20px;
 		background: $white-01;
 		border-radius: 4px;
-		height: 150px;
 	}
 
-	.screen-header {
+	.screen-item-header {
 		display: block;
-		background: $gray-02;
+		border-radius: 4px 4px 0 0;
+
+		&.header-blue { background: $blue-01; }
+		&.header-green { background: $green-02; }
+
+		h3 {
+			display: block;
+			color: $white-01;
+			font-weight: 100;
+			font-size: 20px;
+			padding: 10px 0 10px 20px;
+			border-radius: 4px 4px 0 0;
+			margin: 0;
+		}
+	}
+
+	.screen-item-content {
+		display: block;
+
+		ul {
+			display: block;
+			padding: 20px;
+			margin: 0;
+			list-style: none;
+		}
+
+		li {
+			font-weight: 100;
+			font-size: 15px;
+			padding: 10px 0;
+			border-top: 1px solid $gray-01;
+
+			&:first-child {
+				padding: 0 0 10px;
+				border: none;
+			}
+		}
+
+		a {
+			color: $gray-03;
+			text-decoration: none;
+
+			&:hover {
+				color: $green-01;
+			}
+		}
 	}
 }

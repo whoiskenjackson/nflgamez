@@ -274,10 +274,59 @@ h2 {
   margin: 20px;
   background: #fff;
   border-radius: 4px;
-  height: 150px;
 }
-/* line 253, dashboard.scss */
-.screen-home .screen-header {
+/* line 252, dashboard.scss */
+.screen-home .screen-item-header {
   display: block;
-  background: #fafafa;
+  border-radius: 4px 4px 0 0;
+}
+/* line 256, dashboard.scss */
+.screen-home .screen-item-header.header-blue {
+  background: #3bafda;
+}
+/* line 257, dashboard.scss */
+.screen-home .screen-item-header.header-green {
+  background: #1fb5ac;
+}
+/* line 259, dashboard.scss */
+.screen-home .screen-item-header h3 {
+  display: block;
+  color: #fff;
+  font-weight: 100;
+  font-size: 20px;
+  padding: 10px 0 10px 20px;
+  border-radius: 4px 4px 0 0;
+  margin: 0;
+}
+/* line 270, dashboard.scss */
+.screen-home .screen-item-content {
+  display: block;
+}
+/* line 273, dashboard.scss */
+.screen-home .screen-item-content ul {
+  display: block;
+  padding: 20px;
+  margin: 0;
+  list-style: none;
+}
+/* line 280, dashboard.scss */
+.screen-home .screen-item-content li {
+  font-weight: 100;
+  font-size: 15px;
+  padding: 10px 0;
+  border-top: 1px solid #f6f6f6;
+}
+/* line 286, dashboard.scss */
+.screen-home .screen-item-content li:first-child {
+  padding: 0 0 10px;
+  border: none;
+}
+/* line 292, dashboard.scss */
+.screen-home .screen-item-content a {
+  color: #a7a2a2;
+  text-decoration: none;
+}
+/* line 296, dashboard.scss */
+.screen-home .screen-item-content a:hover {
+  color: #45db5e;
 }
