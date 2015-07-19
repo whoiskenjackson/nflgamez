@@ -149,51 +149,104 @@ h2 {
 	overflow: auto;
 
 	.header {
-		padding: 40px 0;
-		text-align: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 30px;
+		padding: 15px 0;
+		background: $purple-03;
+		clear: both;
+		width: 100%;
 
 		h1 {
+			float: left;
 			font-weight: 100;
-			font-size: 40px;
+			font-size: 25px;
 			color: $white-01;
+			margin: 0;
+			padding: 0 0 0 25px;
+		}
+
+		h2 {
+			float: right;
+			font-weight: 100;
+			font-size: 25px;
+			color: $white-01;
+			margin: 0;
+			padding: 0 25px 0 0;
+		}
+
+		a {
+			display: inline-block;
+			color: $white-01;
+			padding: 0 0 0 20px;
+
+			&:hover {
+				color: $green-01;
+			}
 		}
 	}
 
-	.info-bar {
-		width: 100%;
-		background: $black-02;
+	.sidebar {
+		position: absolute;
+		top: 60px;
+		left: 0;
+		width: 300px;
+		min-height: 100%;
+		background: $purple-02;
 
-		ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-		}
-
-		li {
+		i {
 			display: inline-block;
-			font-size: 25px;
-			padding: 10px;
+			padding-right: 10px;
 		}
 
 		a {
 			display: block;
-			padding: 5px 20px;
-			border-radius: 4px;
+			padding: 5px 0 5px 25px;
 			color: $white-01;
 			text-decoration: none;
 
 			&:hover {
 				color: $green-01;
-				background: #222;
 			}
+		}
+
+		ul {
+			list-style: none;
+			font-size: 15px;
+			margin: 0;
+			padding: 25px 0 0 0;
 		}
 	}
 
 	.screen-content {
-		position: relative;
-		width: 100%;
+		position: absolute;
+		top: 60px;
+		left: 300px;
+		right: 0;
 		min-height: 100%;
 		height: auto;
+		background: $gray-01;
+	}
+
+	.screen-row {
+		display: block;
+		width: 100%;
+		clear: both;
+	}
+
+	.screen-column {
+		width: 50%;
+		display: block;
+		float: left;
+	}
+
+	.screen-item {
+		display: block;
+		margin: 20px;
 		background: $white-01;
+		border-radius: 4px;
+		height: 150px;
 	}
 }

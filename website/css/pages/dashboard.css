@@ -176,50 +176,103 @@ h2 {
 }
 /* line 151, dashboard.scss */
 .screen-home .header {
-  padding: 40px 0;
-  text-align: center;
-}
-/* line 155, dashboard.scss */
-.screen-home .header h1 {
-  font-weight: 100;
-  font-size: 40px;
-  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  padding: 15px 0;
+  background: #1f232c;
+  clear: both;
+  width: 100%;
 }
 /* line 162, dashboard.scss */
-.screen-home .info-bar {
-  width: 100%;
-  background: #111;
-}
-/* line 166, dashboard.scss */
-.screen-home .info-bar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-/* line 172, dashboard.scss */
-.screen-home .info-bar li {
-  display: inline-block;
+.screen-home .header h1 {
+  float: left;
+  font-weight: 100;
   font-size: 25px;
-  padding: 10px;
+  color: #fff;
+  margin: 0;
+  padding: 0 0 0 25px;
 }
-/* line 178, dashboard.scss */
-.screen-home .info-bar a {
+/* line 171, dashboard.scss */
+.screen-home .header h2 {
+  float: right;
+  font-weight: 100;
+  font-size: 25px;
+  color: #fff;
+  margin: 0;
+  padding: 0 25px 0 0;
+}
+/* line 180, dashboard.scss */
+.screen-home .header a {
+  display: inline-block;
+  color: #fff;
+  padding: 0 0 0 20px;
+}
+/* line 185, dashboard.scss */
+.screen-home .header a:hover {
+  color: #45db5e;
+}
+/* line 191, dashboard.scss */
+.screen-home .sidebar {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 300px;
+  min-height: 100%;
+  background: #232730;
+}
+/* line 199, dashboard.scss */
+.screen-home .sidebar i {
+  display: inline-block;
+  padding-right: 10px;
+}
+/* line 204, dashboard.scss */
+.screen-home .sidebar a {
   display: block;
-  padding: 5px 20px;
-  border-radius: 4px;
+  padding: 5px 0 5px 25px;
   color: #fff;
   text-decoration: none;
 }
-/* line 185, dashboard.scss */
-.screen-home .info-bar a:hover {
+/* line 210, dashboard.scss */
+.screen-home .sidebar a:hover {
   color: #45db5e;
-  background: #222;
 }
-/* line 192, dashboard.scss */
+/* line 215, dashboard.scss */
+.screen-home .sidebar ul {
+  list-style: none;
+  font-size: 15px;
+  margin: 0;
+  padding: 25px 0 0 0;
+}
+/* line 223, dashboard.scss */
 .screen-home .screen-content {
-  position: relative;
-  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 300px;
+  right: 0;
   min-height: 100%;
   height: auto;
+  background: #f6f6f6;
+}
+/* line 233, dashboard.scss */
+.screen-home .screen-row {
+  display: block;
+  width: 100%;
+  clear: both;
+}
+/* line 239, dashboard.scss */
+.screen-home .screen-column {
+  width: 50%;
+  display: block;
+  float: left;
+}
+/* line 245, dashboard.scss */
+.screen-home .screen-item {
+  display: block;
+  margin: 20px;
   background: #fff;
+  border-radius: 4px;
+  height: 150px;
 }

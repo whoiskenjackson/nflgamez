@@ -4,9 +4,9 @@ this["Handlebars"]["templates"] = this["Handlebars"]["templates"] || {};
 this["Handlebars"]["templates"]["home"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
     var helper;
 
-  return "<div class=\"screen-home\">\n	<div class=\"header\">\n		<h1>Hello, "
+  return "<div class=\"screen-home\">\n	<header class=\"header\">\n		<h1>Dashboard</h1>\n		<h2>Hello, <strong>"
     + this.escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"name","hash":{},"data":data}) : helper)))
-    + "</h1>\n	</div>\n	<div class=\"info-bar\">\n		<ul>\n			<li><a href=\"#\"><i class=\"fa fa-newspaper-o\"></i></a></li>\n			<li><a href=\"#\"><i class=\"fa fa-users\"></i></a></li>\n			<li><a href=\"#\"><i class=\"fa fa-area-chart\"></i></a></li>\n			<li><a href=\"#\"><i class=\"fa fa-rocket\"></i></a></li>\n			<li><a href=\"#\"><i class=\"fa fa-cogs\"></i></a></li>\n		</ul>\n	</div>\n	<div class=\"screen-content\"></div>\n</div>";
+    + "</strong><a href=\"#\"><i class=\"fa fa-cogs\"></i></a></h2>\n	</header>\n	<div class=\"sidebar\">\n		<ul>\n			<li><a href=\"#\"><i class=\"fa fa-tachometer\"></i> Dashboard</a></li>\n			<li><a href=\"#\"><i class=\"fa fa-newspaper-o\"></i> Latest News</a></li>\n			<li><a href=\"#\"><i class=\"fa fa-trophy\"></i> Rankings</a></li>\n			<li><a href=\"#\"><i class=\"fa fa-users\"></i> Player Stats</a></li>\n			<li><a href=\"#\"><i class=\"fa fa-rocket\"></i> Game Center</a></li>\n		</ul>\n	</div>\n	<div class=\"screen-content\">\n		<div class=\"screen-row\">\n			<div class=\"screen-column\">\n				<div class=\"screen-item\">\n\n				</div>\n			</div>\n			<div class=\"screen-column\">\n				<div class=\"screen-item\">\n\n				</div>\n			</div>\n		</div>\n	</div>\n</div>";
 },"useData":true});
 
 this["Handlebars"]["templates"]["setup"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
