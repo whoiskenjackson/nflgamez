@@ -3,8 +3,9 @@ define(function (require) {
 	return {
 		init: function(model) {
 		    
-		    var userInfoURL = "js/settings/user.json";
-
+		    var userInfoURL = "js/settings/user.json"; // User JSON Filepath
+            
+            // Setup Options
 			this.opt = {
 				scope: $("#main"),
 				templates: Handlebars.templates,
@@ -14,11 +15,13 @@ define(function (require) {
 			this.$el = this.opt.scope;
 			this.model = this.opt.model;
 			
-			this.getData(userInfoURL);
+			this.getData(userInfoURL); // Check to see if user.json exists
+			
 		},
 		
 		getData: function(url) {
-		    var self = this;
+		    //
+		    var self = this; // Keep track of scope
 		    
 		    $.ajax({
     			dataType: "json",
@@ -41,13 +44,17 @@ define(function (require) {
     				self.createUserDataModel();
     			}
     		});
+    		
 		},
 		
 		renderHomeTemplate: function() {
+		    
 		    this.$el.html(this.opt.templates["home"](this.model));
+		    
 		},
 		
 		createUserDataModel: function() {
+		    
 		    var model = {
     			"name": null,
     			"team": null,
@@ -67,11 +74,13 @@ define(function (require) {
     		this.model = model;
     		this.renderSetupTemplate(model);
     		this.bindEvents();
+    		
 		},
 
 		renderSetupTemplate: function() {
 			// Render the Setup Template
 			this.$el.html(this.opt.templates["setup"]);
+			
 		},
 
 		bindEvents: function() {
@@ -91,9 +100,11 @@ define(function (require) {
 				self.storeUserInformation();
 				self.animateToHomeScreen();
 			});
+			
 		},
 
 		animateToNextSlide: function(elm) {
+		    
 			var $parent = elm.parent(); // Find the Parent
 			var $pagination = this.$el.find(".pagination"); // Find the Pagination
 			var $currentPagItem = $pagination.find(".active"); // Find the Active Item in the Pagination
@@ -107,9 +118,11 @@ define(function (require) {
 				$currentPagItem.removeClass("active");
 				$currentPagItem.next().addClass("active");
 			}
+			
 		},
 
 		storeUserInformation: function() {
+		    
 			var $elm = this.$el.find(".screen-welcome");
 			this.model.name = $elm.find("#name").val();
 			this.model.team = $elm.find("#team").val();
@@ -120,13 +133,16 @@ define(function (require) {
 			setTimeout(function(){
 				$elm.remove();
 			}, 1000);
+			
 		},
 
 		animateToHomeScreen: function() {
+		    
 			if(this.$el.find("#team").val() != "") {
 				this.$el.find(".screen-welcome").addClass("animate-out");
 				this.renderHomeTemplate();
 			}
+			
 		}
 	};
 });
