@@ -1,27 +1,58 @@
-/* line 5, news.scss */
+/* line 7, news.scss */
+.screen-news .filter a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #111;
+}
+/* line 14, news.scss */
+.screen-news .filter span {
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #3bafda;
+  border: 4px solid #f6f6f6;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+/* line 26, news.scss */
+.screen-news .filter .fa {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+/* line 37, news.scss */
 .screen-news .screen-item-header {
   padding-top: 20px;
 }
-/* line 7, news.scss */
+/* line 39, news.scss */
 .screen-news .screen-item-header img {
   width: 25%;
   height: auto;
   margin: 0 auto 20px;
 }
-/* line 13, news.scss */
+/* line 45, news.scss */
 .screen-news .screen-item-header h3 {
   font-weight: 300;
   padding: 10px 40px 20px;
 }
-/* line 18, news.scss */
+/* line 50, news.scss */
 .screen-news .screen-item-header a {
   text-decoration: none;
 }
-/* line 21, news.scss */
+/* line 53, news.scss */
 .screen-news .screen-item-header a h3 {
   color: #111;
 }
-/* line 26, news.scss */
+/* line 58, news.scss */
 .screen-news .screen-item-header a:hover h3 {
   color: #45db5e;
 }
