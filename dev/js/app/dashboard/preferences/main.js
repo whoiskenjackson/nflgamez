@@ -22,7 +22,28 @@ define(function (require) {
 	    renderTemplate: function() {
 	        
 	        this.$el.html(this.opt.templates["preferences"](this.model));
+	        this.bindEvents();
 	        
+	    },
+	    
+	    bindEvents: function() {
+	        
+	        var self = this;
+	        
+	        this.$el.find(".btn-save").on("click", function(e) {
+	            e.preventDefault();
+	            self.savePreferences();
+	        });
+	    },
+	    
+	    savePreferences: function() {
+	        var self = this;
+	        console.log(this.model);
+	        this.$el.find("[name='news']").each(function() {
+	           if($(this).is(":checked")) {
+	               console.log(this);
+	           }
+	        });
 	    }
 	    
 	}
