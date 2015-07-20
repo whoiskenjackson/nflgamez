@@ -1,0 +1,36 @@
+/* line 5, preferences.scss */
+.screen-preferences .screen-column {
+  float: none;
+  margin: 0 auto;
+}
+/* line 11, preferences.scss */
+.screen-preferences .screen-item h4 {
+  font-size: 20px;
+  font-weight: 300;
+  display: block;
+  padding: 0 20px 20px;
+  margin: 0;
+}
+/* line 18, preferences.scss */
+.screen-preferences .screen-item h4:first-child {
+  padding-top: 20px;
+}
+/* line 21, preferences.scss */
+.screen-preferences .screen-item label {
+  display: block;
+  padding: 0 20px 20px;
+}
+/* line 25, preferences.scss */
+.screen-preferences .screen-item label:first-child {
+  padding-top: 20px;
+}
+/* line 31, preferences.scss */
+.screen-preferences .btn {
+  display: inline-block;
+  margin: 0 0 20px 20px;
+  border-radius: 4px;
+  background: #45db5e;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}

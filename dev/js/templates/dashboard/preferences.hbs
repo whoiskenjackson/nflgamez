@@ -1,0 +1,85 @@
+<div class="screen-preferences screen-main">
+	<header class="header">
+		<h1>Dashboard</h1>
+		<h2>Hello, <strong>{{name}}</strong><a href="#"><i class="fa fa-cogs"></i></a></h2>
+	</header>
+	<div class="sidebar">
+		<ul>
+			<li><a href="index.html"><i class="fa fa-tachometer"></i> Dashboard</a></li>
+			<li><a href="news.html"><i class="fa fa-newspaper-o"></i> Latest News</a></li>
+			<li><a href="#"><i class="fa fa-trophy"></i> Rankings</a></li>
+			<li><a href="#"><i class="fa fa-users"></i> Player Stats</a></li>
+			<li><a href="#"><i class="fa fa-rocket"></i> Game Center</a></li>
+		</ul>
+	</div>
+	<div class="screen-content">
+		<div class="screen-row">
+			<div class="screen-column">
+				<div class="screen-item">
+					<div class="screen-item-header header-blue">
+						<h3>User Info</h3>
+					</div>
+					<div class="screen-item-content">
+						<h4>Name:</h4>
+						<label for="">
+						    <input type="text" name="" id="" value="{{name}}" />
+						</label>
+						<h4>Favorite Team:</h4>
+						<label for="">
+						    <input type="text" name="" id="" value="{{team}}" />
+						</label>
+					</div>
+				</div>
+				<div class="screen-item">
+					<div class="screen-item-header header-green">
+						<h3>News Outlets</h3>
+					</div>
+					<div class="screen-item-content">
+						
+						<label for="news">
+						    <input type="radio" name="news" value="NFL" /> NFL
+						</label>
+						<label for="news">
+						    <input type="radio" name="news" value="CBS" /> CBS
+						</label>
+						<label for="news">
+						    <input type="radio" name="news" value="ESPN" /> ESPN
+						</label>
+						<label for="news">
+						    <input type="radio" name="news" value="KFFL" /> KFFL
+						</label>
+						<label for="news">
+						    <input type="radio" name="news" value="Rotoworld" /> Rotoworld
+						</label>
+					</div>
+				</div>
+				
+				<div class="screen-item">
+					<div class="screen-item-header header-green">
+						<h3>Players to Follow</h3>
+					</div>
+					<div class="screen-item-content">
+						
+						<label for="news">
+						    <input type="checkbox" name="news" /> NFL
+						</label>
+						<label for="news">
+						    <input type="checkbox" name="news" /> CBS
+						</label>
+						<label for="news">
+						    <input type="checkbox" name="news" /> ESPN
+						</label>
+						<label for="news">
+						    <input type="checkbox" name="news" /> KFFL
+						</label>
+						<label for="news">
+						    <input type="checkbox" name="news" /> Rotoworld
+						</label>
+					</div>
+				</div>
+				
+				<a href="#" class="btn">Save</a>
+			</div>
+		</div>
+	</div>
+</div>

@@ -4,7 +4,8 @@ define(function(require) {
     var config = {
         "page": {
             "home": "home/main",
-            "news": "news/main"
+            "news": "news/main",
+            "preferences": "preferences/main"
         }
     }
 
