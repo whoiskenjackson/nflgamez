@@ -1,0 +1,676 @@
+{
+  [
+   {
+      name: "Arizona Cardinals",
+      shortname: "Cardinals",
+      slug: "cardinals",
+      abbr: "ARI",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=ARI"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=ARI"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-ARI"
+        }
+      ]
+    },
+    {
+      name: "Atlanta Falcons",
+      shortname: "Falcons",
+      slug: "falcons",
+      abbr: "ATL",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=ATL"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=ATL"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-ATL"
+        }
+      ]
+    },
+    {
+      name: "Baltimore Ravens",
+      shortname: "Ravens",
+      slug: "ravens",
+      abbr: "BAL",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=BAL"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=BAL"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-BAL"
+        }
+      ]
+    },
+    {
+      name: "Buffalo Bills",
+      shortname: "Bills",
+      slug: "bills",
+      abbr: "BUF",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=BUF"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=BUF"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-BUF"
+        }
+      ]
+    },
+    {
+      name: "Carolina Panthers",
+      shortname: "Panthers",
+      slug: "panthers",
+      abbr: "CAR",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=CAR"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=CAR"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-CAR"
+        }
+      ]
+    },
+    {
+      name: "Chicago Bears",
+      shortname: "Bears",
+      slug: "bears",
+      abbr: "CHI",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=CHI"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=CHI"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-CHI"
+        }
+      ]
+    },
+    {
+      name: "Cincinnati Bengals",
+      shortname: "Bengals",
+      slug: "bengals",
+      abbr: "CIN",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=CIN"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=CIN"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-CIN"
+        }
+      ]
+    },
+    {
+      name: "Cleveland Browns",
+      shortname: "Browns",
+      slug: "browns",
+      abbr: "CLE",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=CLE"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=CLE"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-CLE"
+        }
+      ]
+    },
+    {
+      name: "Dallas Cowboys",
+      shortname: "Cowboys",
+      slug: "cowboys",
+      abbr: "DAL",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=DAL"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=DAL"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-DAL"
+        }
+      ]
+    },
+    {
+      name: "Denver Broncos",
+      shortname: "Broncos",
+      slug: "broncos",
+      abbr: "DEN",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=DEN"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=DEN"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-DEN"
+        }
+      ]
+    },
+    {
+      name: "Detroit Lions",
+      shortname: "Lions",
+      slug: "lions",
+      abbr: "DET",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=DET"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=DET"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-DET"
+        }
+      ]
+    },
+    {
+      name: "Green Bay Packers",
+      shortname: "Packers",
+      slug: "packers",
+      abbr: "GBP",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=GBP"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=GBP"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-GBP"
+        }
+      ]
+    },
+    {
+      name: "Houston Texans",
+      shortname: "Texans",
+      slug: "texans",
+      abbr: "HOU",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=HOU"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=HOU"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-HOU"
+        }
+      ]
+    },
+    {
+      name: "Indianapolis Colts",
+      shortname: "Colts",
+      slug: "colts",
+      abbr: "IND",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=IND"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=IND"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-IND"
+        }
+      ]
+    },
+    {
+      name: "Jacksonville Jaguars",
+      shortname: "Jaguars",
+      slug: "jaguars",
+      abbr: "JAC",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=JAC"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=JAC"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-JAC"
+        }
+      ]
+    },
+    {
+      name: "Kansas City Chiefs",
+      shortname: "Chiefs",
+      slug: "chiefs",
+      abbr: "KCC",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=KCC"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=KCC"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-KCC"
+        }
+      ]
+    },
+    {
+      name: "Miami Dolphins",
+      shortname: "Dolphins",
+      slug: "dolphins",
+      abbr: "MIA",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=MIA"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=MIA"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-MIA"
+        }
+      ]
+    },
+    {
+      name: "Minnesota Vikings",
+      shortname: "Vikings",
+      slug: "vikings",
+      abbr: "MIN",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=MIN"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=MIN"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-MIN"
+        }
+      ]
+    },
+    {
+      name: "New England Patriots",
+      shortname: "Patriots",
+      slug: "patriots",
+      abbr: "NEP",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=NEP"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=NEP"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-NEP"
+        }
+      ]
+    },
+    {
+      name: "New Orleans Saints",
+      shortname: "Saints",
+      slug: "saints",
+      abbr: "NOS",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=NOS"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=NOS"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-NOS"
+        }
+      ]
+    },
+    {
+      name: "New York Giants",
+      shortname: "Giants",
+      slug: "giants",
+      abbr: "NYG",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=NYG"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=NYG"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-NYG"
+        }
+      ]
+    },
+    {
+      name: "New York Jets",
+      shortname: "Jets",
+      slug: "jets",
+      abbr: "NYJ",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=NYJ"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=NYJ"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-NYJ"
+        }
+      ]
+    },
+    {
+      name: "Oakland Raiders",
+      shortname: "Raiders",
+      slug: "raiders",
+      abbr: "OAK",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=OAK"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=OAK"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-OAK"
+        }
+      ]
+    },
+    {
+      name: "Philadelphia Eagles",
+      shortname: "Eagles",
+      slug: "eagles",
+      abbr: "PHI",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=PHI"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=PHI"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-PHI"
+        }
+      ]
+    },
+    {
+      name: "Pittsburgh Steelers",
+      shortname: "Steelers",
+      slug: "steelers",
+      abbr: "PIT",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=PIT"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=PIT"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-PIT"
+        }
+      ]
+    },
+    {
+      name: "San Diego Chargers",
+      shortname: "Chargers",
+      slug: "chargers",
+      abbr: "SDC",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=SDC"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=SDC"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-SDC"
+        }
+      ]
+    },
+    {
+      name: "San Francisco 49ers",
+      shortname: "49ers",
+      slug: "49ers",
+      abbr: "SFO",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=SFO"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=SFO"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-SFO"
+        }
+      ]
+    },
+    {
+      name: "Seattle Seahawks",
+      shortname: "Seahawks",
+      slug: "seahawks",
+      abbr: "SEA",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=SEA"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=SEA"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-SEA"
+        }
+      ]
+    },
+    {
+      name: "St. Louis Rams",
+      shortname: "Rams",
+      slug: "rams",
+      abbr: "STL",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=STL"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=STL"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-STL"
+        }
+      ]
+    },
+    {
+      name: "Tampa Bay Buccaneers",
+      shortname: "Buccaneers",
+      slug: "buccaneers",
+      abbr: "TBB",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=TBB"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=TBB"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-TBB"
+        }
+      ]
+    },
+    {
+      name: "Tennessee Titans",
+      shortname: "Titans",
+      slug: "titans",
+      abbr: "TEN",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=TEN"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=TEN"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-TEN"
+        }
+      ]
+    },
+    {
+      name: "Washington Redskins",
+      shortname: "Redskins",
+      slug: "redskins",
+      abbr: "WAS",
+      logo: "logo-001.png",
+      newsfeeds: [
+        {
+          title: "NFL",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=team&abbr=WAS"
+        },
+        {
+          title: "NFL Highlights",
+          url: "http://www.nfl.com/rss/rsslanding?searchString=teamVideo&abbr=WAS"
+        }
+        {
+          title: "KFFL",
+          url: "http://www.kffl.com/printRSS.php/NFL-WAS"
+        }
+      ]
+    }
+  ]
+}

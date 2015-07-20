@@ -1,26 +1,75 @@
 define(function (require) {
 
-	var home;
-
 	return {
 		init: function(model) {
-
-			home = require('../home/main');
+		    
+		    var userInfoURL = "js/settings/user.json";
 
 			this.opt = {
 				scope: $("#main"),
 				templates: Handlebars.templates,
-				model: model
+				model: null
 			}
 
 			this.$el = this.opt.scope;
 			this.model = this.opt.model;
-
-			this.renderTemplate();
-			this.bindEvents();
+			
+			this.getData(userInfoURL);
+		},
+		
+		getData: function(url) {
+		    var self = this;
+		    
+		    $.ajax({
+    			dataType: "json",
+    			type: 'GET',
+    			url: url,
+    			success: function(model){
+    				/* If user.json exists, store it via local storage
+    				 * and init the Dashboard
+    				 */
+    				var data = JSON.stringify(model);
+    				localStorage.setItem("userData", data);
+    				
+    				self.model = model;
+    				self.renderHomeTemplate(self.model);
+    			},
+    			error: function(){
+    				/* If user.json doesn't exist, create the userData model
+    				 * and run the setup screen.
+    				 */
+    				self.createUserDataModel();
+    			}
+    		});
+		},
+		
+		renderHomeTemplate: function() {
+		    this.$el.html(this.opt.templates["home"](this.model));
+		},
+		
+		createUserDataModel: function() {
+		    var model = {
+    			"name": null,
+    			"team": null,
+    			"news": {
+    			    "NFL": true,
+    			    "CBS": true,
+    			    "ESPN": true,
+    			    "KFFL": true,
+    			    "Rotoworld": true
+    			},
+    			"players": []
+    		}
+    		
+    		var data = JSON.stringify(model);
+    		localStorage.setItem("userData", data);
+    		
+    		this.model = model;
+    		this.renderSetupTemplate(model);
+    		this.bindEvents();
 		},
 
-		renderTemplate: function() {
+		renderSetupTemplate: function() {
 			// Render the Setup Template
 			this.$el.html(this.opt.templates["setup"]);
 		},
@@ -76,7 +125,7 @@ define(function (require) {
 		animateToHomeScreen: function() {
 			if(this.$el.find("#team").val() != "") {
 				this.$el.find(".screen-welcome").addClass("animate-out");
-				home.init(this.model);
+				this.renderHomeTemplate();
 			}
 		}
 	};

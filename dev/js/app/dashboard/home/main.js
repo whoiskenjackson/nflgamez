@@ -1,4 +1,4 @@
-define(function (require) {
+define(['../setup/main'], function (setup) {
 
 	return {
 		init: function(model) {
@@ -11,8 +11,12 @@ define(function (require) {
 
 			this.$el = this.opt.scope;
 			this.model = this.opt.model;
-
-			this.renderTemplate();
+			
+			if(this.model) {
+			    this.renderTemplate();
+			} else {
+			    setup.init();
+			}
 
 		},
 
@@ -20,4 +24,5 @@ define(function (require) {
 			this.$el.html(this.opt.templates["home"](this.model));
 		}
 	};
+	
 });
