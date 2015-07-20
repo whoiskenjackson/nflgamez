@@ -1,0 +1,27 @@
+/* line 5, news.scss */
+.screen-news .screen-item-header {
+  padding-top: 20px;
+}
+/* line 7, news.scss */
+.screen-news .screen-item-header img {
+  width: 25%;
+  height: auto;
+  margin: 0 auto 20px;
+}
+/* line 13, news.scss */
+.screen-news .screen-item-header h3 {
+  font-weight: 300;
+  padding: 10px 40px 20px;
+}
+/* line 18, news.scss */
+.screen-news .screen-item-header a {
+  text-decoration: none;
+}
+/* line 21, news.scss */
+.screen-news .screen-item-header a h3 {
+  color: #111;
+}
+/* line 26, news.scss */
+.screen-news .screen-item-header a:hover h3 {
+  color: #45db5e;
+}
