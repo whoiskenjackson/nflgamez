@@ -166,27 +166,31 @@ body {
   display: block;
   float: left;
 }
-/* line 121, theme/layout/_wrapper.scss */
+/* line 120, theme/layout/_wrapper.scss */
+.screen-main .screen-column.column-4 {
+  width: 25%;
+}
+/* line 125, theme/layout/_wrapper.scss */
 .screen-main .screen-item {
   display: block;
   margin: 20px;
   background: #fff;
   border-radius: 4px;
 }
-/* line 128, theme/layout/_wrapper.scss */
+/* line 132, theme/layout/_wrapper.scss */
 .screen-main .screen-item-header {
   display: block;
   border-radius: 4px 4px 0 0;
 }
-/* line 132, theme/layout/_wrapper.scss */
+/* line 136, theme/layout/_wrapper.scss */
 .screen-main .screen-item-header.header-blue {
   background: #3bafda;
 }
-/* line 133, theme/layout/_wrapper.scss */
+/* line 137, theme/layout/_wrapper.scss */
 .screen-main .screen-item-header.header-green {
   background: #1fb5ac;
 }
-/* line 135, theme/layout/_wrapper.scss */
+/* line 139, theme/layout/_wrapper.scss */
 .screen-main .screen-item-header h3 {
   display: block;
   color: #fff;
@@ -196,35 +200,35 @@ body {
   border-radius: 4px 4px 0 0;
   margin: 0;
 }
-/* line 146, theme/layout/_wrapper.scss */
+/* line 150, theme/layout/_wrapper.scss */
 .screen-main .screen-item-content {
   display: block;
 }
-/* line 149, theme/layout/_wrapper.scss */
+/* line 153, theme/layout/_wrapper.scss */
 .screen-main .screen-item-content ul {
   display: block;
   padding: 20px;
   margin: 0;
   list-style: none;
 }
-/* line 156, theme/layout/_wrapper.scss */
+/* line 160, theme/layout/_wrapper.scss */
 .screen-main .screen-item-content li {
   font-weight: 100;
   font-size: 15px;
   padding: 10px 0;
   border-top: 1px solid #f6f6f6;
 }
-/* line 162, theme/layout/_wrapper.scss */
+/* line 166, theme/layout/_wrapper.scss */
 .screen-main .screen-item-content li:first-child {
   padding: 0 0 10px;
   border: none;
 }
-/* line 168, theme/layout/_wrapper.scss */
+/* line 172, theme/layout/_wrapper.scss */
 .screen-main .screen-item-content a {
   color: #a7a2a2;
   text-decoration: none;
 }
-/* line 172, theme/layout/_wrapper.scss */
+/* line 176, theme/layout/_wrapper.scss */
 .screen-main .screen-item-content a:hover {
   color: #45db5e;
 }
