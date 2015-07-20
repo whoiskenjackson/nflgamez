@@ -1,1 +1,12 @@
-{"name":"Kenny","team":"Cowboys","news":[],"players":[]}
+{
+   "name":"Kenneth",
+   "team":"Cincinnati Bengals",
+   "news":{
+        "NFL": true,
+        "CBS": false,
+        "ESPN": false,
+        "KFFL": false,
+        "Rotoworld": false
+    }
+   "players":[]
+}

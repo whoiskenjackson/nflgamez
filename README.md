@@ -4,9 +4,11 @@ NFL Dashboard and Game Center. An elegant way to keep track of NFL news, player 
 
 ###Getting Started
 
-####Clone the Repo
+####Fork / Clone the Repo
 
-* `git clone https://github.com/whoiskenjackson/nflgamez.git`
+* Fork the repo.
+* Clone to your machine.
+* Submit Pull Requests tied to issues.
 
 ####Install Packages
 

@@ -16,7 +16,13 @@ define(function(require) {
 		var model = {
 			"name": null,
 			"team": null,
-			"news": [],
+			"news": {
+			    "NFL": true,
+			    "CBS": false,
+			    "ESPN": false,
+			    "KFFL": false,
+			    "Rotoworld": false
+			},
 			"players": []
 		}
 		var data = JSON.stringify(model);
