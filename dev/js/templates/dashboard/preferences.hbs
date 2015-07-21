@@ -21,12 +21,12 @@
 					</div>
 					<div class="screen-item-content">
 						<h4>Name:</h4>
-						<label for="">
-						    <input type="text" name="" id="" value="{{name}}" />
+						<label for="name">
+						    <input type="text" name="name" value="{{name}}" />
 						</label>
 						<h4>Favorite Team:</h4>
-						<label for="">
-						    <input type="text" name="" id="" value="{{team}}" />
+						<label for="team">
+						    <input type="text" name="team" value="{{team}}" />
 						</label>
 					</div>
 				</div>
@@ -35,49 +35,30 @@
 						<h3>News Outlets</h3>
 					</div>
 					<div class="screen-item-content">
-						
+
+						{{#each this.news}}
 						<label for="news">
-						    <input type="checkbox" name="news" value="NFL" /> NFL
+						    <input type="checkbox" {{#if this}}checked{{/if}} name="news" value="{{@key}}" /> {{@key}}
 						</label>
-						<label for="news">
-						    <input type="checkbox" name="news" value="CBS" /> CBS
-						</label>
-						<label for="news">
-						    <input type="checkbox" name="news" value="ESPN" /> ESPN
-						</label>
-						<label for="news">
-						    <input type="checkbox" name="news" value="KFFL" /> KFFL
-						</label>
-						<label for="news">
-						    <input type="checkbox" name="news" value="Rotoworld" /> Rotoworld
-						</label>
+						{{/each}}
 					</div>
 				</div>
-				
+
 				<div class="screen-item">
 					<div class="screen-item-header header-green">
 						<h3>Players to Follow</h3>
 					</div>
 					<div class="screen-item-content">
-						
+						{{#if players}}
 						<label for="news">
 						    <input type="checkbox" name="player" /> NFL
 						</label>
-						<label for="news">
-						    <input type="checkbox" name="player" /> CBS
-						</label>
-						<label for="news">
-						    <input type="checkbox" name="player" /> ESPN
-						</label>
-						<label for="news">
-						    <input type="checkbox" name="player" /> KFFL
-						</label>
-						<label for="news">
-						    <input type="checkbox" name="player" /> Rotoworld
-						</label>
+						{{else}}
+						<p>No players are currently being followed.</p>
+						{{/if}}
 					</div>
 				</div>
-				
+
 				<a href="#" class="btn btn-save">Save</a>
 			</div>
 		</div>

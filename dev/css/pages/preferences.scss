@@ -14,20 +14,26 @@
             display: block;
             padding: 0 20px 20px;
             margin: 0;
-            
+
             &:first-child { padding-top: 20px; }
         }
-        
+
+        p {
+            padding: 20px;
+            display: block;
+            margin: 0;
+        }
+
         label {
             display: block;
             padding: 0 20px 20px;
-            
+
             &:first-child {
                 padding-top: 20px;
             }
         }
     }
-    
+
     .btn {
         display: inline-block;
         margin: 0 0 20px 20px;
