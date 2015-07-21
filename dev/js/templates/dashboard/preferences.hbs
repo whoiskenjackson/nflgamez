@@ -15,7 +15,7 @@
 	<div class="screen-content">
 		<div class="screen-row">
 			<div class="screen-column">
-				<div class="screen-item">
+				<div class="screen-item user-info">
 					<div class="screen-item-header header-blue">
 						<h3>User Info</h3>
 					</div>
@@ -45,7 +45,7 @@
 				</div>
 
 				<div class="screen-item">
-					<div class="screen-item-header header-green">
+					<div class="screen-item-header header-blue">
 						<h3>Players to Follow</h3>
 					</div>
 					<div class="screen-item-content">
@@ -56,6 +56,18 @@
 						{{else}}
 						<p>No players are currently being followed.</p>
 						{{/if}}
+					</div>
+				</div>
+				
+				<div class="screen-item">
+					<div class="screen-item-header header-green">
+						<h3>Export Data</h3>
+					</div>
+					<div class="screen-item-content">
+					    <label for="export">
+					        <p>To keep user data, copy and past the text below into a file named 'user.json'. Save that file in the 'js/app/settings/' directory.</p>
+						    <textarea name="export"></textarea>
+						</label>
 					</div>
 				</div>
 

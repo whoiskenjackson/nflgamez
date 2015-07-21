@@ -31,6 +31,31 @@
             &:first-child {
                 padding-top: 20px;
             }
+            
+            p {
+                padding: 0 0 20px;
+            }
+        }
+        
+        textarea,
+        [type="text"] {
+            width: 100%;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid $gray-01;
+            padding: 10px 0;
+        }
+        
+        [type="text"] {
+            font-family: $lato;
+            font-size: 15px;
+            font-weight: 300;
+        }
+        
+        textarea {
+            font-family: monospace;
+            font-size: 10px;
+            border: 1px solid $gray-01;
         }
     }
 

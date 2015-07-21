@@ -1,17 +1,19 @@
-define(['../setup/main'], function (setup) {
+define(['../setup/main', '../setup/teams'], function (setup, teams) {
 
 	return {
-		init: function(model) {
+		init: function(model, teamData) {
 
             // Setup some options
 			this.opt = {
 				scope: $("#main"),
 				templates: Handlebars.templates,
-				model: model
+				model: model,
+				teamData: teamData
 			}
 
 			this.$el = this.opt.scope;
 			this.model = this.opt.model;
+			this.teamData = this.opt.teamData;
 			
 			// If a model exists
 			if(this.model) {
@@ -19,6 +21,13 @@ define(['../setup/main'], function (setup) {
 			} else {
 			    setup.init(); // Go through the setup process
 			}
+			
+			if(!this.teamData) {
+			    console.log("Get Team Data");
+			    teams.init();
+			}
+			
+			
 
 		},
 

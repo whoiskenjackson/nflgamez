@@ -4,8 +4,6 @@ define(function (require) {
 
 	    init: function(model) {
 
-	        model = JSON.parse(model);
-
 	        this.opt = {
         		scope: $("#main"),
         		templates: Handlebars.templates,
@@ -22,8 +20,14 @@ define(function (require) {
 	    renderTemplate: function() {
 
 	        this.$el.html(this.opt.templates["preferences"](this.model));
+	        this.displayUserExportData();
 	        this.bindEvents();
 
+	    },
+	    
+	    displayUserExportData: function() {
+	        var data = JSON.stringify(this.model);
+	        this.$el.find("[name='export']").val(data);
 	    },
 
 	    bindEvents: function() {
@@ -39,12 +43,32 @@ define(function (require) {
 
 	    savePreferences: function() {
 
+	        this.saveUserInfo();
 	        this.saveNewsNetworks();
 	        this.savePlayers();
 
 	        var data = JSON.stringify(this.model);
 	        localStorage.setItem("userData", data);
+	        
+	        this.renderTemplate();
 
+	    },
+	    
+	    saveUserInfo: function() {
+	        
+	        var self = this;
+	        var userInfoValue;
+	        var setting;
+	        
+	        this.$el.find("[type='text']").each(function() {
+	            
+	            userInfoValue = $(this).val();
+	            setting = $(this).attr('name');
+	            
+	            _.set(self.model, setting, userInfoValue);
+	            
+	        });
+	        
 	    },
 
 	    saveNewsNetworks: function() {
@@ -72,7 +96,8 @@ define(function (require) {
 
 	    savePlayers: function() {
 
-	    	var self = this;
+	    	// TODO: Once player's data is figured out,
+	    	// save player info.
 
 	    }
 

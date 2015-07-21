@@ -1,7 +1,7 @@
 define(function (require) {
 
 	return {
-		init: function(model) {
+		init: function() {
 		    
 		    var userInfoURL = "js/settings/user.json"; // User JSON Filepath
             
@@ -9,7 +9,7 @@ define(function (require) {
 			this.opt = {
 				scope: $("#main"),
 				templates: Handlebars.templates,
-				model: null
+				model: null,
 			}
 
 			this.$el = this.opt.scope;

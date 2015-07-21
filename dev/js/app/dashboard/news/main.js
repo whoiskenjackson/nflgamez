@@ -2,14 +2,13 @@ define(function (require) {
 	
 	return {
 	    
-	    init: function(model) {
-	        
-	        model = JSON.parse(model);
+	    init: function(model, teamData) {
 	        
 	        this.opt = {
         		scope: $("#main"),
         		templates: Handlebars.templates,
-        		model: model
+        		model: model,
+        		teamData: teamData
         	}
         	
         	this.$el = this.opt.scope;

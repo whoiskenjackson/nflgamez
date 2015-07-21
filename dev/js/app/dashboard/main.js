@@ -9,8 +9,17 @@ define(function(require) {
         }
     }
 
-    // Get User Data from Local Stoarage
+    // Get User Data and Team Data from Local Stoarage
     var userData = localStorage.getItem("userData");
+    var teamData = localStorage.getItem("teamData");
+    
+    if(userData) {
+        userData = JSON.parse(userData);
+    }
+    
+    if(teamData) {
+        teamData = JSON.parse(teamData);
+    }
     
     // Find the data-page attribute to figure
     // out what page the user is on.
@@ -20,8 +29,9 @@ define(function(require) {
     
     // Require the Module
     require([modulePath], function(module) {
-        // Initialize the Module
-        module.init(userData);
+
+        module.init(userData, teamData); // Initialize the Module
+
     });
 
 });
