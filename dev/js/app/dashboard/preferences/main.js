@@ -39,11 +39,22 @@ define(function (require) {
 
 	    savePreferences: function() {
 
-	        var self = this;
+	        this.saveNewsNetworks();
+	        this.savePlayers();
 
-	        this.$el.find("[name='news']").each(function() {
+	        var data = JSON.stringify(this.model);
+	        localStorage.setItem("userData", data);
 
-	           var network = $(this).val();
+	    },
+
+	    saveNewsNetworks: function() {
+
+	    	var self = this;
+	    	var network;
+
+	    	this.$el.find("[name='news']").each(function() {
+
+	           network = $(this).val();
 
 	           if($(this).is(":checked")) {
 
@@ -57,8 +68,11 @@ define(function (require) {
 
 	        });
 
-	        var data = JSON.stringify(this.model);
-	        localStorage.setItem("userData", data);
+	    },
+
+	    savePlayers: function() {
+
+	    	var self = this;
 
 	    }
 
