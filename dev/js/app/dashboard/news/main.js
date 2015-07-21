@@ -4,6 +4,7 @@ define(function (require) {
 	    
 	    init: function(model, teamData) {
 	        
+	        // Setup options
 	        this.opt = {
         		scope: $("#main"),
         		templates: Handlebars.templates,

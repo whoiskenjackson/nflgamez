@@ -3,7 +3,7 @@ define(['../setup/main', '../setup/teams'], function (setup, teams) {
 	return {
 		init: function(model, teamData) {
 
-            // Setup some options
+            // Setup options
 			this.opt = {
 				scope: $("#main"),
 				templates: Handlebars.templates,
@@ -17,14 +17,19 @@ define(['../setup/main', '../setup/teams'], function (setup, teams) {
 			
 			// If a model exists
 			if(this.model) {
+			    
 			    this.renderTemplate(); // Render the Home Template
+			    
 			} else {
+			    
 			    setup.init(); // Go through the setup process
+			    
 			}
 			
 			if(!this.teamData) {
-			    console.log("Get Team Data");
+			    
 			    teams.init();
+			    
 			}
 			
 			
