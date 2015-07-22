@@ -11,12 +11,18 @@ define(function(require) {
         templates: Handlebars.templates
     }
     
+    // Register Partials
     Handlebars.registerPartial("sidebar", config.templates["sidebar"]);
+    
+    Handlebars.registerHelper("inc", function(value, options){
+        return parseInt(value) + 1;
+    });
 
     // Get User Data and Team Data from Local Stoarage
     var userData = localStorage.getItem("userData");
     var teamData = localStorage.getItem("teamData");
     
+    // Convert data into JSON
     if(userData) {
         userData = JSON.parse(userData);
     }

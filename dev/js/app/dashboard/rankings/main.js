@@ -11,7 +11,8 @@ define(function (require) {
         		model: model,
         		teamData: teamData,
         		api: {
-        		    editordraft: "http://api.fantasy.nfl.com/v1/players/editordraftranks?format=json"
+        		    editordraft: "http://api.fantasy.nfl.com/v1/players/editordraftranks?format=json",
+        		    editorweekly: "http://api.fantasy.nfl.com/v1/players/editorweekranks?format=json&week=99"
         		}
         	}
         	
@@ -21,8 +22,32 @@ define(function (require) {
 	        
 	        // Render the template
 	        this.renderTemplate();
+	        this.bindEvents();
 	        this.getRankings(this.opt.api.editordraft);
         	
+	    },
+	    
+	    bindEvents: function() {
+	        
+	        var self = this;
+	        var api = self.opt.api;
+	        var url;
+	        
+	        this.$el.find("[data-draftrank]").on("click", function(e) {
+	            
+	            url = api.editordraft;
+	            self.getRankings(url);
+	            
+	        });
+	        
+	        this.$el.find("[data-weekrank]").on("click", function(e) {
+	            
+	            var position = $(this).attr("data-weekrank");
+	            url = api.editorweekly+"&position="+position;
+	            self.getRankings(url);
+	            
+	        });
+	        
 	    },
 	    
 	    renderTemplate: function() {
@@ -43,6 +68,7 @@ define(function (require) {
     				/* If user.json exists, store it via local storage
     				 * and init the Dashboard
     				 */
+    				console.log(data);
     				self.renderPlayersList(data);
     			},
     			error: function(error){
