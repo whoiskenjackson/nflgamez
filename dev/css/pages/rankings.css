@@ -60,15 +60,15 @@
 }
 /* line 64, rankings.scss */
 .screen-rankings .screen-item-content span.player-name {
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
 }
-/* line 68, rankings.scss */
+/* line 66, rankings.scss */
 .screen-rankings .screen-item-content span.player-position {
   padding: 0 20px;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
 }
-/* line 74, rankings.scss */
+/* line 72, rankings.scss */
 .screen-rankings .screen-item-content span.player-team {
   padding-left: 20px;
 }

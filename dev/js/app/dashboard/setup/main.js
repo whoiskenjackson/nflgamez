@@ -123,23 +123,27 @@ define(function (require) {
 
 		storeUserInformation: function() {
 		    
-			var $elm = this.$el.find(".screen-welcome");
+		    var $elm = this.$el.find(".screen-welcome");
 			this.model.name = $elm.find("#name").val();
 			this.model.team = $elm.find("#team").val();
 
 			var data = JSON.stringify(this.model);
 			localStorage.setItem("userData", data);
-
-			setTimeout(function(){
-				$elm.remove();
-			}, 1000);
 			
 		},
 
 		animateToHomeScreen: function() {
-		    
+		    var $welcome = $(".screen-welcome");
+			var $background = $(".background");
+			
 			if(this.$el.find("#team").val() != "") {
+			    
 				this.$el.find(".screen-welcome").addClass("animate-out");
+				setTimeout(function(){
+    				$welcome.remove();
+    				$background.remove();
+    			}, 1000);
+    			
 				this.renderHomeTemplate();
 			}
 			

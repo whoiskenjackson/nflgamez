@@ -61,9 +61,7 @@
                 }
             }
             
-            &.player-name {
-                padding: 0 20px 0 20px;
-            }
+            &.player-name { padding: 0 20px; }
             
             &.player-position {
                 padding: 0 20px;
@@ -71,9 +69,7 @@
                 border-right: 1px solid $gray-04;
             }
             
-            &.player-team {
-                padding-left: 20px;
-            }
+            &.player-team { padding-left: 20px; }
         }
     }
 }

@@ -49,7 +49,7 @@ a {
 }
 /* line 5, theme/layout/_wrapper.scss */
 body {
-  background: #41446a;
+  background: #232730;
   font-family: "Lato", sans-serif;
 }
 
@@ -119,32 +119,31 @@ body {
   left: 0;
   width: 300px;
   min-height: 100%;
-  background: #232730;
 }
-/* line 75, theme/layout/_wrapper.scss */
+/* line 74, theme/layout/_wrapper.scss */
 .screen-main .sidebar i {
   display: inline-block;
   padding-right: 10px;
 }
-/* line 80, theme/layout/_wrapper.scss */
+/* line 79, theme/layout/_wrapper.scss */
 .screen-main .sidebar a {
   display: block;
   padding: 5px 0 5px 25px;
   color: #fff;
   text-decoration: none;
 }
-/* line 86, theme/layout/_wrapper.scss */
+/* line 85, theme/layout/_wrapper.scss */
 .screen-main .sidebar a:hover {
   color: #45db5e;
 }
-/* line 91, theme/layout/_wrapper.scss */
+/* line 90, theme/layout/_wrapper.scss */
 .screen-main .sidebar ul {
   list-style: none;
   font-size: 15px;
   margin: 0;
   padding: 25px 0 0 0;
 }
-/* line 99, theme/layout/_wrapper.scss */
+/* line 98, theme/layout/_wrapper.scss */
 .screen-main .screen-content {
   position: absolute;
   top: 60px;
@@ -154,54 +153,54 @@ body {
   height: auto;
   background: #f6f6f6;
 }
-/* line 109, theme/layout/_wrapper.scss */
+/* line 108, theme/layout/_wrapper.scss */
 .screen-main .screen-row {
   display: block;
   width: 100%;
   clear: both;
 }
-/* line 115, theme/layout/_wrapper.scss */
+/* line 114, theme/layout/_wrapper.scss */
 .screen-main .screen-column {
   display: block;
   float: left;
 }
-/* line 119, theme/layout/_wrapper.scss */
+/* line 118, theme/layout/_wrapper.scss */
 .screen-main .screen-column.column-1 {
   width: 25%;
 }
-/* line 120, theme/layout/_wrapper.scss */
+/* line 119, theme/layout/_wrapper.scss */
 .screen-main .screen-column.column-2 {
   width: 50%;
 }
-/* line 121, theme/layout/_wrapper.scss */
+/* line 120, theme/layout/_wrapper.scss */
 .screen-main .screen-column.column-3 {
   width: 75%;
 }
-/* line 122, theme/layout/_wrapper.scss */
+/* line 121, theme/layout/_wrapper.scss */
 .screen-main .screen-column.column-4 {
   width: 100%;
 }
-/* line 125, theme/layout/_wrapper.scss */
+/* line 124, theme/layout/_wrapper.scss */
 .screen-main .screen-item {
   display: block;
   margin: 20px;
   background: #fff;
   border-radius: 4px;
 }
-/* line 132, theme/layout/_wrapper.scss */
+/* line 131, theme/layout/_wrapper.scss */
 .screen-main .screen-item-header {
   display: block;
   border-radius: 4px 4px 0 0;
 }
-/* line 136, theme/layout/_wrapper.scss */
+/* line 135, theme/layout/_wrapper.scss */
 .screen-main .screen-item-header.header-blue {
   background: #3bafda;
 }
-/* line 137, theme/layout/_wrapper.scss */
+/* line 136, theme/layout/_wrapper.scss */
 .screen-main .screen-item-header.header-green {
   background: #1fb5ac;
 }
-/* line 139, theme/layout/_wrapper.scss */
+/* line 138, theme/layout/_wrapper.scss */
 .screen-main .screen-item-header h3 {
   display: block;
   color: #fff;
@@ -211,35 +210,35 @@ body {
   border-radius: 4px 4px 0 0;
   margin: 0;
 }
-/* line 150, theme/layout/_wrapper.scss */
+/* line 149, theme/layout/_wrapper.scss */
 .screen-main .screen-item-content {
   display: block;
 }
-/* line 153, theme/layout/_wrapper.scss */
+/* line 152, theme/layout/_wrapper.scss */
 .screen-main .screen-item-content ul {
   display: block;
   padding: 20px;
   margin: 0;
   list-style: none;
 }
-/* line 160, theme/layout/_wrapper.scss */
+/* line 159, theme/layout/_wrapper.scss */
 .screen-main .screen-item-content li {
   font-weight: 100;
   font-size: 15px;
   padding: 10px 0;
   border-top: 1px solid #f6f6f6;
 }
-/* line 166, theme/layout/_wrapper.scss */
+/* line 165, theme/layout/_wrapper.scss */
 .screen-main .screen-item-content li:first-child {
   padding: 0 0 10px;
   border: none;
 }
-/* line 172, theme/layout/_wrapper.scss */
+/* line 171, theme/layout/_wrapper.scss */
 .screen-main .screen-item-content a {
   color: #a7a2a2;
   text-decoration: none;
 }
-/* line 176, theme/layout/_wrapper.scss */
+/* line 175, theme/layout/_wrapper.scss */
 .screen-main .screen-item-content a:hover {
   color: #45db5e;
 }

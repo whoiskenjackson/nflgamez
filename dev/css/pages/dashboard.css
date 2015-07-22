@@ -1,6 +1,6 @@
 /* line 4, dashboard.scss */
 .background {
-  background: url(../../images/background.jpg) center center no-repeat;
+  background: url(../../images/background.jpg) #41446a center center no-repeat;
   background-size: cover;
   -webkit-filter: blur(2px) opacity(50%) brightness(50%);
           filter: blur(2px) opacity(50%) brightness(50%);

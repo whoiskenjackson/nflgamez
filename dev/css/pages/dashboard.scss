@@ -2,7 +2,7 @@
 @import "theme/base/core";
 
 .background {
-	background: url(../../images/background.jpg) center center no-repeat;
+	background: url(../../images/background.jpg) $purple-01 center center no-repeat;
 	background-size: cover;
 	filter: blur(2px) opacity(50%) brightness(50%);
 	display: block;

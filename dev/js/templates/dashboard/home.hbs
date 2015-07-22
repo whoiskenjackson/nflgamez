@@ -4,17 +4,11 @@
 		<h2>Hello, <strong>{{name}}</strong><a href="preferences.html"><i class="fa fa-cogs"></i></a></h2>
 	</header>
 	<div class="sidebar">
-		<ul>
-			<li><a href="index.html"><i class="fa fa-tachometer"></i> Dashboard</a></li>
-			<li><a href="news.html"><i class="fa fa-newspaper-o"></i> Latest News</a></li>
-			<li><a href="#"><i class="fa fa-trophy"></i> Rankings</a></li>
-			<li><a href="#"><i class="fa fa-users"></i> Player Stats</a></li>
-			<li><a href="#"><i class="fa fa-rocket"></i> Game Center</a></li>
-		</ul>
+		{{> sidebar}}
 	</div>
 	<div class="screen-content">
 		<div class="screen-row">
-			<div class="screen-column">
+			<div class="screen-column column-2">
 				<div class="screen-item">
 					<div class="screen-item-header header-blue">
 						<h3>Recent News</h3>
@@ -31,7 +25,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="screen-column">
+			<div class="screen-column column-2">
 				<div class="screen-item">
 					<div class="screen-item-header header-green">
 						<h3>Rankings</h3>

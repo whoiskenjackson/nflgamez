@@ -2,13 +2,16 @@ define(function(require) {
 
     // Config of all of the available pages.
     var config = {
-        "page": {
+        page: {
             "home": "home/main",
             "news": "news/main",
             "rankings": "rankings/main",
             "preferences": "preferences/main"
-        }
+        },
+        templates: Handlebars.templates
     }
+    
+    Handlebars.registerPartial("sidebar", config.templates["sidebar"]);
 
     // Get User Data and Team Data from Local Stoarage
     var userData = localStorage.getItem("userData");
