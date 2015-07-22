@@ -45,6 +45,7 @@ define(function (require) {
 
 	    savePreferences: function() {
 
+	        // Save all preferences
 	        this.saveUserInfo();
 	        this.saveNewsNetworks();
 	        this.savePlayers();
@@ -52,6 +53,7 @@ define(function (require) {
 	        var data = JSON.stringify(this.model); // Convert model to string
 	        localStorage.setItem("userData", data); // Store data
 	        
+	        // Re-Render the template
 	        this.renderTemplate();
 
 	    },

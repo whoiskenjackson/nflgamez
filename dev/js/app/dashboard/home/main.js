@@ -11,6 +11,7 @@ define(['../setup/main', '../setup/teams'], function (setup, teams) {
 				teamData: teamData
 			}
 
+			// Shorten references
 			this.$el = this.opt.scope;
 			this.model = this.opt.model;
 			this.teamData = this.opt.teamData;
@@ -28,7 +29,7 @@ define(['../setup/main', '../setup/teams'], function (setup, teams) {
 			
 			if(!this.teamData) {
 			    
-			    teams.init();
+			    teams.init(); // Get team data and store it in local storage
 			    
 			}
 			
@@ -38,7 +39,7 @@ define(['../setup/main', '../setup/teams'], function (setup, teams) {
 
 		renderTemplate: function() {
 		    
-			this.$el.html(this.opt.templates["home"](this.model));
+			this.$el.html(this.opt.templates["home"](this.model)); // Render the template
 			
 		}
 	};

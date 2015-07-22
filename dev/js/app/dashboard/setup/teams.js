@@ -11,6 +11,7 @@ define(function (require) {
 				teamData: null
 			}
 
+			// Shorten references
 			this.$el = this.opt.scope;
 			this.teamData = this.opt.teamData;
 			
@@ -35,9 +36,7 @@ define(function (require) {
 
     			},
     			error: function(error){
-    				/* If user.json doesn't exist, create the userData model
-    				 * and run the setup screen.
-    				 */
+    				// If teams.json doesn't exist, console the errors
     				console.log("Sorry, no teams.json is available. See error below:");
     				console.log(error);
     			}

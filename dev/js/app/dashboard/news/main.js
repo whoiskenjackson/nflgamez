@@ -12,9 +12,11 @@ define(function (require) {
         		teamData: teamData
         	}
         	
+        	// Shorten references
         	this.$el = this.opt.scope;
 	        this.model = this.opt.model;
 	        
+	        // Render the template
 	        this.renderTemplate();
         	
 	    },
