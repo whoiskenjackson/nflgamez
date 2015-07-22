@@ -1,0 +1,79 @@
+@import "app/base/core";
+@import "theme/base/core";
+
+.screen-rankings {
+    .filter {
+        ul {
+            margin: 0;
+            padding: 20px;
+            list-style: none;
+            display: block;
+        }
+        
+        li {
+            display: inline-block;
+            padding: 0 15px;
+            font-size: 15px;
+            font-weight: 30px;
+            border-left: 1px solid $gray-04;
+            
+            &.filter-draft {
+                border-left: none;
+                padding-left: 0;
+            }
+            
+            &.all { border-left: none; }
+        }
+        
+        a {
+            display: block;
+            text-decoration: none;
+            color: $black-02;
+            
+            &:hover { color: $green-01; }
+        }
+    }
+    
+    .screen-item-content {
+        
+        .stats-link {
+            padding: 20px;
+            display: block;
+        }
+        
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 25px;
+            font-weight: 100;
+            
+            &.player-image {
+                width: 75px;
+                overflow: hidden;
+                padding: 0 40px 0 20px;
+                background: url(../../images/bengals/logo-001.png) no-repeat right top;
+                background-size: auto 70%;
+                
+                img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 50%;
+                }
+            }
+            
+            &.player-name {
+                padding: 0 20px 0 20px;
+            }
+            
+            &.player-position {
+                padding: 0 20px;
+                border-left: 1px solid $gray-04;
+                border-right: 1px solid $gray-04;
+            }
+            
+            &.player-team {
+                padding-left: 20px;
+            }
+        }
+    }
+}

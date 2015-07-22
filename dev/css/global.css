@@ -162,13 +162,24 @@ body {
 }
 /* line 115, theme/layout/_wrapper.scss */
 .screen-main .screen-column {
-  width: 50%;
   display: block;
   float: left;
 }
-/* line 120, theme/layout/_wrapper.scss */
-.screen-main .screen-column.column-4 {
+/* line 119, theme/layout/_wrapper.scss */
+.screen-main .screen-column.column-1 {
   width: 25%;
+}
+/* line 120, theme/layout/_wrapper.scss */
+.screen-main .screen-column.column-2 {
+  width: 50%;
+}
+/* line 121, theme/layout/_wrapper.scss */
+.screen-main .screen-column.column-3 {
+  width: 75%;
+}
+/* line 122, theme/layout/_wrapper.scss */
+.screen-main .screen-column.column-4 {
+  width: 100%;
 }
 /* line 125, theme/layout/_wrapper.scss */
 .screen-main .screen-item {
