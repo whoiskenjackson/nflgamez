@@ -35,15 +35,21 @@ define(function (require) {
 	        
 	        this.$el.find("[data-draftrank]").on("click", function(e) {
 	            
+	            e.preventDefault();
+	            
 	            url = api.editordraft;
+	            
 	            self.getRankings(url);
 	            
 	        });
 	        
 	        this.$el.find("[data-weekrank]").on("click", function(e) {
 	            
+	            e.preventDefault();
+	            
 	            var position = $(this).attr("data-weekrank");
 	            url = api.editorweekly+"&position="+position;
+	            
 	            self.getRankings(url);
 	            
 	        });
