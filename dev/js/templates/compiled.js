@@ -28,7 +28,9 @@ this["Handlebars"]["templates"]["players-list"] = Handlebars.template({"1":funct
     + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
     + "\">\n			<span class=\"player-rank\">"
     + alias3((helpers.inc || (depth0 && depth0.inc) || alias1).call(depth0,(data && data.index),{"name":"inc","hash":{},"data":data}))
-    + ".</span>\n			<span class=\"player-image\"><img src=\"http://static.nfl.com/static/content/public/static/img/fantasy/transparent/200x200/"
+    + ".</span>\n			<span class=\"player-image team-"
+    + alias3(((helper = (helper = helpers.teamAbbr || (depth0 != null ? depth0.teamAbbr : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"teamAbbr","hash":{},"data":data}) : helper)))
+    + "\"><img src=\"http://static.nfl.com/static/content/public/static/img/fantasy/transparent/200x200/"
     + alias3(((helper = (helper = helpers.esbid || (depth0 != null ? depth0.esbid : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"esbid","hash":{},"data":data}) : helper)))
     + ".png\"></span>\n			<span class=\"player-name\">"
     + alias3(((helper = (helper = helpers.firstName || (depth0 != null ? depth0.firstName : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"firstName","hash":{},"data":data}) : helper)))

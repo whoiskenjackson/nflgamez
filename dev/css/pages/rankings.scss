@@ -51,8 +51,6 @@
                 width: 75px;
                 overflow: hidden;
                 padding: 0 40px 0 20px;
-                background: url(../../images/bengals/logo-001.png) no-repeat right top;
-                background-size: auto 70%;
                 
                 img {
                     width: 100%;
@@ -71,5 +69,14 @@
             
             &.player-team { padding-left: 20px; }
         }
+    }
+}
+
+$map-team-logos: ("ARI","ATL","BAL","BUF","CAR","CHI","CIN","CLE","DAL","DEN","DET","GB","HOU","IND","JAC","KC","MIA","MIN","NE","NO","NYG","NYJ","OAK","PHI","PIT","SDC","SF","SEA","STL","TB","TEN","WAS");
+
+@each $team in $map-team-logos {
+    .team-#{$team} {
+        background: url(../../images/#{$team}/logo-001.png) no-repeat right top;
+        background-size: auto 70%;
     }
 }
