@@ -86,9 +86,27 @@ define(function (require) {
 	        
 	    },
 	    
+	    followPlayer: function(playerID) {
+	        
+	        this.model.players.push(playerID);
+	        console.log(this.model);
+	        
+	    },
+	    
 	    renderPlayersList: function(model) {
 	        
+	        var self = this;
+	        
 	        this.$el.find(".players-list").html(this.opt.templates["players-list"](model));
+	        
+	        this.$el.find(".follow-link").on("click", function(e) {
+	            
+	            e.preventDefault();
+	            
+	            var playerID = $(this).attr("data-id");
+	            self.followPlayer(playerID);
+	            
+	        });
 	        
 	    }
 	    

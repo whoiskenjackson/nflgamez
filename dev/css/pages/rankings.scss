@@ -36,9 +36,19 @@
     
     .screen-item-content {
         
+        position: relative;
+        
         .stats-link {
             padding: 20px;
             display: block;
+        }
+        
+        .follow-link {
+            font-size: 25px;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
         }
         
         span {
