@@ -86,13 +86,6 @@ define(function (require) {
 	        
 	    },
 	    
-	    followPlayer: function(playerID) {
-	        
-	        this.model.players.push(playerID);
-	        console.log(this.model);
-	        
-	    },
-	    
 	    renderPlayersList: function(model) {
 	        
 	        var self = this;
@@ -108,7 +101,22 @@ define(function (require) {
 	            
 	        });
 	        
-	    }
+	    },
+	    
+	    followPlayer: function(playerID) {
+	        
+	        var players = _.get(this.model, "players");
+	        
+	        if(!_.indexOf(players, playerID)) {
+	            console.log("Nope");
+	            this.model.players.push(playerID);
+	        } else {
+	            console.log("Yep");
+	        }
+	        
+	        
+	        
+	    },
 	    
 	}
 
