@@ -9,74 +9,76 @@
             list-style: none;
             display: block;
         }
-        
+
         li {
             display: inline-block;
             padding: 0 15px;
             font-size: 15px;
             font-weight: 30px;
             border-left: 1px solid $gray-04;
-            
+
             &.filter-draft {
                 border-left: none;
                 padding-left: 0;
             }
-            
+
             &.all { border-left: none; }
         }
-        
+
         a {
             display: block;
             text-decoration: none;
             color: $black-02;
-            
+
             &:hover { color: $green-01; }
         }
     }
-    
+
     .screen-item-content {
-        
+
         position: relative;
-        
+
         .stats-link {
             padding: 20px;
             display: block;
         }
-        
+
         .follow-link {
             font-size: 25px;
             position: absolute;
             top: 50%;
             right: 20px;
             transform: translateY(-50%);
+
+            &.following { color: $green-01; }
         }
-        
+
         span {
             display: inline-block;
             vertical-align: middle;
             font-size: 25px;
             font-weight: 100;
-            
+
             &.player-image {
                 width: 75px;
                 overflow: hidden;
                 padding: 0 40px 0 20px;
-                
+
                 img {
                     width: 100%;
                     height: auto;
                     border-radius: 50%;
                 }
             }
-            
+
             &.player-name { padding: 0 20px; }
-            
+
             &.player-position {
                 padding: 0 20px;
                 border-left: 1px solid $gray-04;
                 border-right: 1px solid $gray-04;
             }
-            
+
             &.player-team { padding-left: 20px; }
         }
     }
