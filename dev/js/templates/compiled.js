@@ -22,23 +22,37 @@ this["Handlebars"]["templates"]["news"] = Handlebars.template({"compiler":[6,">=
 },"usePartial":true,"useData":true});
 
 this["Handlebars"]["templates"]["player"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    var stack1, helper;
+    var stack1, helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
 
   return "<div class=\"screen-player screen-main\">\n	<header class=\"header\">\n		<h1>Dashboard</h1>\n		<h2>Hello, <strong>"
-    + this.escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"name","hash":{},"data":data}) : helper)))
+    + alias3(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"name","hash":{},"data":data}) : helper)))
     + "</strong><a href=\"preferences.html\"><i class=\"fa fa-cogs\"></i></a></h2>\n	</header>\n	<div class=\"sidebar\">\n"
     + ((stack1 = this.invokePartial(partials.sidebar,depth0,{"name":"sidebar","data":data,"indent":"\t\t","helpers":helpers,"partials":partials})) != null ? stack1 : "")
-    + "	</div>\n	<div class=\"screen-content\">\n		<div class=\"screen-row filter\">\n			<div class=\"screen-column column-4\">\n				<div class=\"screen-item\">\n				    <ul>\n				        <li class=\"filter-draft\"><a href=\"#\" data-draftrank=\"true\">Draft Rankings</a></li>\n				        <li class=\"filter-position\"><strong>Position:</strong></li>\n				        <li><a href=\"#\" data-weekrank=\"QB\">QB</a></li>\n				        <li><a href=\"#\" data-weekrank=\"WR\">WR</a></li>\n				        <li><a href=\"#\" data-weekrank=\"RB\">RB</a></li>\n				        <li><a href=\"#\" data-weekrank=\"TE\">TE</a></li>\n				        <li><a href=\"#\" data-weekrank=\"WR-RB-TE\">WR / RB / TE</a></li>\n				        <li><a href=\"#\" data-weekrank=\"K\">K</a></li>\n				        <li><a href=\"#\" data-weekrank=\"DEF\">DEF</a></li>\n				    </ul>\n				</div>\n			</div>\n		</div>\n		<div class=\"screen-row\">\n			<div class=\"screen-column column-4 players-list\"></div>\n			<div class=\"more-container\">\n				<a href=\"#\" class=\"load-more\">Load More</a>\n			</div>\n		</div>\n	</div>\n</div>";
+    + "	</div>\n	<div class=\"screen-content\">\n		<div class=\"screen-row\">\n			<div class=\"screen-column column-4\">\n				<div class=\"screen-item\">\n				    <div class=\"player-image team-"
+    + alias3(((helper = (helper = helpers.teamAbbr || (depth0 != null ? depth0.teamAbbr : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"teamAbbr","hash":{},"data":data}) : helper)))
+    + "\"><img src=\"http://static.nfl.com/static/content/public/static/img/fantasy/transparent/200x200/"
+    + alias3(((helper = (helper = helpers.esbid || (depth0 != null ? depth0.esbid : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"esbid","hash":{},"data":data}) : helper)))
+    + ".png\"></div>\n        			<div class=\"player-name\">"
+    + alias3(((helper = (helper = helpers.firstName || (depth0 != null ? depth0.firstName : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"firstName","hash":{},"data":data}) : helper)))
+    + " "
+    + alias3(((helper = (helper = helpers.lastName || (depth0 != null ? depth0.lastName : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"lastName","hash":{},"data":data}) : helper)))
+    + "</div>\n        			<div class=\"player-position\">"
+    + alias3(((helper = (helper = helpers.position || (depth0 != null ? depth0.position : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"position","hash":{},"data":data}) : helper)))
+    + "</div>\n        			<div class=\"player-team\">"
+    + alias3(((helper = (helper = helpers.teamAbbr || (depth0 != null ? depth0.teamAbbr : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"teamAbbr","hash":{},"data":data}) : helper)))
+    + "</div>\n				</div>\n			</div>\n		</div>\n	</div>\n</div>";
 },"usePartial":true,"useData":true});
 
 this["Handlebars"]["templates"]["players-list"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
     var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
 
-  return "<div class=\"screen-item\">\n	<div class=\"screen-item-content\">\n		<a href=\"player.html?playerID="
+  return "<div class=\"screen-item\">\n	<div class=\"screen-item-content\">\n		<a href=\"player.html?playerId="
     + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
-    + "\" class=\"stats-link\" data-id=\""
-    + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
-    + "\">\n			<span class=\"player-rank\">"
+    + "&position="
+    + alias3(((helper = (helper = helpers.position || (depth0 != null ? depth0.position : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"position","hash":{},"data":data}) : helper)))
+    + "&teamAbbr="
+    + alias3(((helper = (helper = helpers.teamAbbr || (depth0 != null ? depth0.teamAbbr : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"teamAbbr","hash":{},"data":data}) : helper)))
+    + "\" class=\"stats-link\">\n			<span class=\"player-rank\">"
     + alias3(((helper = (helper = helpers.rank || (depth0 != null ? depth0.rank : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"rank","hash":{},"data":data}) : helper)))
     + ".</span>\n			<span class=\"player-image team-"
     + alias3(((helper = (helper = helpers.teamAbbr || (depth0 != null ? depth0.teamAbbr : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"teamAbbr","hash":{},"data":data}) : helper)))

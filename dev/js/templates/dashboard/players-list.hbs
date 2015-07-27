@@ -1,7 +1,7 @@
 {{#each players}}
 <div class="screen-item">
 	<div class="screen-item-content">
-		<a href="player.html?playerID={{id}}" class="stats-link" data-id="{{id}}">
+		<a href="player.html?playerId={{id}}&position={{position}}&teamAbbr={{teamAbbr}}" class="stats-link">
 			<span class="player-rank">{{rank}}.</span>
 			<span class="player-image team-{{teamAbbr}}"><img src="http://static.nfl.com/static/content/public/static/img/fantasy/transparent/200x200/{{esbid}}.png"></span>
 			<span class="player-name">{{firstName}} {{lastName}}</span>

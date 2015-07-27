@@ -7,27 +7,14 @@
 		{{> sidebar}}
 	</div>
 	<div class="screen-content">
-		<div class="screen-row filter">
+		<div class="screen-row">
 			<div class="screen-column column-4">
 				<div class="screen-item">
-				    <ul>
-				        <li class="filter-draft"><a href="#" data-draftrank="true">Draft Rankings</a></li>
-				        <li class="filter-position"><strong>Position:</strong></li>
-				        <li><a href="#" data-weekrank="QB">QB</a></li>
-				        <li><a href="#" data-weekrank="WR">WR</a></li>
-				        <li><a href="#" data-weekrank="RB">RB</a></li>
-				        <li><a href="#" data-weekrank="TE">TE</a></li>
-				        <li><a href="#" data-weekrank="WR-RB-TE">WR / RB / TE</a></li>
-				        <li><a href="#" data-weekrank="K">K</a></li>
-				        <li><a href="#" data-weekrank="DEF">DEF</a></li>
-				    </ul>
+				    <div class="player-image team-{{teamAbbr}}"><img src="http://static.nfl.com/static/content/public/static/img/fantasy/transparent/200x200/{{esbid}}.png"></div>
+        			<div class="player-name">{{firstName}} {{lastName}}</div>
+        			<div class="player-position">{{position}}</div>
+        			<div class="player-team">{{teamAbbr}}</div>
 				</div>
-			</div>
-		</div>
-		<div class="screen-row">
-			<div class="screen-column column-4 players-list"></div>
-			<div class="more-container">
-				<a href="#" class="load-more">Load More</a>
 			</div>
 		</div>
 	</div>
