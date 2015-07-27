@@ -34,7 +34,9 @@ this["Handlebars"]["templates"]["player"] = Handlebars.template({"compiler":[6,"
 this["Handlebars"]["templates"]["players-list"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
     var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
 
-  return "<div class=\"screen-item\">\n	<div class=\"screen-item-content\">\n		<a href=\"#\" class=\"stats-link\" data-id=\""
+  return "<div class=\"screen-item\">\n	<div class=\"screen-item-content\">\n		<a href=\"player.html?playerID="
+    + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
+    + "\" class=\"stats-link\" data-id=\""
     + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
     + "\">\n			<span class=\"player-rank\">"
     + alias3(((helper = (helper = helpers.rank || (depth0 != null ? depth0.rank : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"rank","hash":{},"data":data}) : helper)))
