@@ -1,0 +1,113 @@
+@import "app/base/core";
+@import "theme/base/core";
+
+.screen-player {
+    .filter {
+        ul {
+            margin: 0;
+            padding: 20px;
+            list-style: none;
+            display: block;
+        }
+
+        li {
+            display: inline-block;
+            padding: 0 15px;
+            font-size: 15px;
+            font-weight: 30px;
+            border-left: 1px solid $gray-04;
+
+            &.filter-draft {
+                border-left: none;
+                padding-left: 0;
+            }
+
+            &.all { border-left: none; }
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: $black-02;
+
+            &:hover { color: $green-01; }
+        }
+    }
+
+    .screen-item-content {
+
+        position: relative;
+
+        .stats-link {
+            padding: 20px;
+            display: block;
+        }
+
+        .follow-link {
+            font-size: 25px;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+
+            &.following { color: $green-01; }
+        }
+
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 25px;
+            font-weight: 100;
+
+            &.player-image {
+                width: 75px;
+                overflow: hidden;
+                padding: 0 40px 0 20px;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 50%;
+                }
+            }
+
+            &.player-name { padding: 0 20px; }
+
+            &.player-position {
+                padding: 0 20px;
+                border-left: 1px solid $gray-04;
+                border-right: 1px solid $gray-04;
+            }
+
+            &.player-team { padding-left: 20px; }
+        }
+    }
+
+    .more-container{
+
+        text-align: center;
+
+        .load-more {
+            margin: 20px 0;
+            display: inline-block;
+            padding: 15px 20px;
+            background: $blue-01;
+            color: $white-01;
+            text-decoration: none;
+            border-radius: 4px;
+
+            &:hover {
+                background: lighten($blue-01, 10%);
+            }
+        }
+    }
+}
+
+$map-team-logos: ("ARI","ATL","BAL","BUF","CAR","CHI","CIN","CLE","DAL","DEN","DET","GB","HOU","IND","JAC","KC","MIA","MIN","NE","NO","NYG","NYJ","OAK","PHI","PIT","SDC","SF","SEA","STL","TB","TEN","WAS");
+
+@each $team in $map-team-logos {
+    .team-#{$team} {
+        background: url(../../images/#{$team}/logo-001.png) no-repeat right top;
+        background-size: auto 70%;
+    }
+}

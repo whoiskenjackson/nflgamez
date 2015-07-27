@@ -1,0 +1,300 @@
+/* line 6, player.scss */
+.screen-player .filter ul {
+  margin: 0;
+  padding: 20px;
+  list-style: none;
+  display: block;
+}
+/* line 13, player.scss */
+.screen-player .filter li {
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 15px;
+  font-weight: 30px;
+  border-left: 1px solid #ccc;
+}
+/* line 20, player.scss */
+.screen-player .filter li.filter-draft {
+  border-left: none;
+  padding-left: 0;
+}
+/* line 25, player.scss */
+.screen-player .filter li.all {
+  border-left: none;
+}
+/* line 28, player.scss */
+.screen-player .filter a {
+  display: block;
+  text-decoration: none;
+  color: #111;
+}
+/* line 33, player.scss */
+.screen-player .filter a:hover {
+  color: #45db5e;
+}
+/* line 37, player.scss */
+.screen-player .screen-item-content {
+  position: relative;
+}
+/* line 41, player.scss */
+.screen-player .screen-item-content .stats-link {
+  padding: 20px;
+  display: block;
+}
+/* line 46, player.scss */
+.screen-player .screen-item-content .follow-link {
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+/* line 53, player.scss */
+.screen-player .screen-item-content .follow-link.following {
+  color: #45db5e;
+}
+/* line 56, player.scss */
+.screen-player .screen-item-content span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 25px;
+  font-weight: 100;
+}
+/* line 62, player.scss */
+.screen-player .screen-item-content span.player-image {
+  width: 75px;
+  overflow: hidden;
+  padding: 0 40px 0 20px;
+}
+/* line 67, player.scss */
+.screen-player .screen-item-content span.player-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+/* line 74, player.scss */
+.screen-player .screen-item-content span.player-name {
+  padding: 0 20px;
+}
+/* line 76, player.scss */
+.screen-player .screen-item-content span.player-position {
+  padding: 0 20px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+/* line 82, player.scss */
+.screen-player .screen-item-content span.player-team {
+  padding-left: 20px;
+}
+/* line 86, player.scss */
+.screen-player .more-container {
+  text-align: center;
+}
+/* line 90, player.scss */
+.screen-player .more-container .load-more {
+  margin: 20px 0;
+  display: inline-block;
+  padding: 15px 20px;
+  background: #3bafda;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+/* line 99, player.scss */
+.screen-player .more-container .load-more:hover {
+  background: #66c1e2;
+}
+
+/* line 109, player.scss */
+.team-ARI {
+  background: url(../../images/ARI/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-ATL {
+  background: url(../../images/ATL/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-BAL {
+  background: url(../../images/BAL/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-BUF {
+  background: url(../../images/BUF/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-CAR {
+  background: url(../../images/CAR/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-CHI {
+  background: url(../../images/CHI/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-CIN {
+  background: url(../../images/CIN/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-CLE {
+  background: url(../../images/CLE/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-DAL {
+  background: url(../../images/DAL/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-DEN {
+  background: url(../../images/DEN/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-DET {
+  background: url(../../images/DET/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-GB {
+  background: url(../../images/GB/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-HOU {
+  background: url(../../images/HOU/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-IND {
+  background: url(../../images/IND/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-JAC {
+  background: url(../../images/JAC/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-KC {
+  background: url(../../images/KC/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-MIA {
+  background: url(../../images/MIA/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-MIN {
+  background: url(../../images/MIN/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-NE {
+  background: url(../../images/NE/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-NO {
+  background: url(../../images/NO/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-NYG {
+  background: url(../../images/NYG/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-NYJ {
+  background: url(../../images/NYJ/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-OAK {
+  background: url(../../images/OAK/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-PHI {
+  background: url(../../images/PHI/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-PIT {
+  background: url(../../images/PIT/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-SDC {
+  background: url(../../images/SDC/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-SF {
+  background: url(../../images/SF/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-SEA {
+  background: url(../../images/SEA/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-STL {
+  background: url(../../images/STL/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-TB {
+  background: url(../../images/TB/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-TEN {
+  background: url(../../images/TEN/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}
+
+/* line 109, player.scss */
+.team-WAS {
+  background: url(../../images/WAS/logo-001.png) no-repeat right top;
+  background-size: auto 70%;
+}

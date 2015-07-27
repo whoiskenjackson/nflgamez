@@ -5,6 +5,7 @@ define(function(require) {
         page: {
             "home": "home/main",
             "news": "news/main",
+            "player": "player/main",
             "rankings": "rankings/main",
             "preferences": "preferences/main"
         },

@@ -195,7 +195,7 @@ define(function (require) {
 	        var data = JSON.stringify(this.model);
 	        localStorage.setItem("userData", data);
 
-	    },
+	    }
 
 	}
 
