@@ -13,9 +13,6 @@ define(function(require) {
     
     // Register Partials
     Handlebars.registerPartial("sidebar", config.templates["sidebar"]);
-    Handlebars.registerHelper("inc", function(value, options){
-        return parseInt(value) + 1;
-    });
 
     // Get User Data and Team Data from Local Stoarage
     var userData = localStorage.getItem("userData");

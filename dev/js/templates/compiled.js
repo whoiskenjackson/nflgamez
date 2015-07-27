@@ -27,7 +27,7 @@ this["Handlebars"]["templates"]["players-list"] = Handlebars.template({"1":funct
   return "<div class=\"screen-item\">\n	<div class=\"screen-item-content\">\n		<a href=\"#\" class=\"stats-link\" data-id=\""
     + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
     + "\">\n			<span class=\"player-rank\">"
-    + alias3((helpers.inc || (depth0 && depth0.inc) || alias1).call(depth0,(data && data.index),{"name":"inc","hash":{},"data":data}))
+    + alias3(((helper = (helper = helpers.rank || (depth0 != null ? depth0.rank : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"rank","hash":{},"data":data}) : helper)))
     + ".</span>\n			<span class=\"player-image team-"
     + alias3(((helper = (helper = helpers.teamAbbr || (depth0 != null ? depth0.teamAbbr : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"teamAbbr","hash":{},"data":data}) : helper)))
     + "\"><img src=\"http://static.nfl.com/static/content/public/static/img/fantasy/transparent/200x200/"

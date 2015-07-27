@@ -13,7 +13,8 @@ define(function (require) {
         		api: {
         			current: {
         				api: null,
-        				offset: 0
+        				offset: 0,
+        				rank: 0
         			},
         		    editordraft: "http://api.fantasy.nfl.com/v1/players/editordraftranks?format=json",
         		    editorweekly: "http://api.fantasy.nfl.com/v1/players/editorweekranks?format=json&week=99"
@@ -38,13 +39,25 @@ define(function (require) {
 	    registerPartials: function() {
 
 	    	var self = this; // Keep track of scope
+	    	var rank;
+	    	
+	    	Handlebars.registerHelper("rank", function(){
+	    	    
+	    	    rank = parseInt(self.api.current.rank) + 1;
+	    	    self.api.current.rank = rank;
+                
+                return rank;
+                
+            });
 
 	        // Register Partial
 	        Handlebars.registerHelper("following", function(playerID){
 
 	        	// If player is being followed
 		        if(_.indexOf(self.model.players, playerID) > -1) {
+		        	
 		        	return "following"; // Return following class
+		            
 		        }
 
 		    });
@@ -54,6 +67,24 @@ define(function (require) {
 	    renderTemplate: function() {
 
 	        this.$el.html(this.opt.templates["rankings"](this.model));
+
+	    },
+	    
+	    renderPlayersList: function(model) {
+
+	        var self = this;
+
+	        this.$el.find(".players-list").append(this.opt.templates["players-list"](model));
+
+	        this.$el.find(".follow-link").on("click", function(e) {
+
+	            e.preventDefault();
+
+	            var element = $(this);
+	            var playerID = $(this).attr("data-id");
+	            self.followPlayer(element, playerID);
+
+	        });
 
 	    },
 
@@ -70,8 +101,9 @@ define(function (require) {
 	            e.preventDefault();
 
 	            url = api.editordraft;
-	            self.api.current.api = url;
+	            api.current.api = url;
 	            api.current.offset = 0;
+	            api.current.rank = 0;
 
 	            self.$el.find(".players-list").empty();
 	            self.getRankings(url);
@@ -84,8 +116,9 @@ define(function (require) {
 
 	            position = $(this).attr("data-weekrank");
 	            url = api.editorweekly+"&position="+position;
-	            self.api.current.api = url;
+	            api.current.api = url;
 	            api.current.offset = 0;
+	            api.current.rank = 0;
 
 	            self.$el.find(".players-list").empty();
 	            self.getRankings(url);
@@ -99,6 +132,7 @@ define(function (require) {
 	            offset = api.current.offset + 50;
 	            api.current.offset = offset;
 	            url = api.current.api+"&offset="+offset;
+	            api.current.rank = offset;
 
 	            self.getRankings(url);
 
@@ -128,24 +162,6 @@ define(function (require) {
     				console.log(error);
     			}
     		});
-
-	    },
-
-	    renderPlayersList: function(model) {
-
-	        var self = this;
-
-	        this.$el.find(".players-list").append(this.opt.templates["players-list"](model));
-
-	        this.$el.find(".follow-link").on("click", function(e) {
-
-	            e.preventDefault();
-
-	            var element = $(this);
-	            var playerID = $(this).attr("data-id");
-	            self.followPlayer(element, playerID);
-
-	        });
 
 	    },
 
