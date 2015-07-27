@@ -11,6 +11,10 @@ define(function (require) {
         		model: model,
         		teamData: teamData,
         		api: {
+        			current: {
+        				api: null,
+        				offset: 0
+        			},
         		    editordraft: "http://api.fantasy.nfl.com/v1/players/editordraftranks?format=json",
         		    editorweekly: "http://api.fantasy.nfl.com/v1/players/editorweekranks?format=json&week=99"
         		}
@@ -19,12 +23,15 @@ define(function (require) {
         	// Shorten references
         	this.$el = this.opt.scope;
 	        this.model = this.opt.model;
+	        this.api = this.opt.api;
 
 	        // Do some magic
 	        this.registerPartials();
 	        this.renderTemplate();
 	        this.bindEvents();
-	        this.getRankings(this.opt.api.editordraft);
+
+	        this.api.current.api = this.api.editordraft;
+	        this.getRankings(this.api.editordraft);
 
 	    },
 
@@ -53,14 +60,20 @@ define(function (require) {
 	    bindEvents: function() {
 
 	        var self = this; // Keep track of scope
-	        var api = self.opt.api; // Shorten reference to api's
+	        var api = self.api; // Shorten reference to api's
+	        var offset = self.api.current.offset;
 	        var url;
+	        var position;
 
 	        this.$el.find("[data-draftrank]").on("click", function(e) {
 
 	            e.preventDefault();
 
 	            url = api.editordraft;
+	            self.api.current.api = url;
+	            api.current.offset = 0;
+
+	            self.$el.find(".players-list").empty();
 	            self.getRankings(url);
 
 	        });
@@ -69,8 +82,23 @@ define(function (require) {
 
 	            e.preventDefault();
 
-	            var position = $(this).attr("data-weekrank");
+	            position = $(this).attr("data-weekrank");
 	            url = api.editorweekly+"&position="+position;
+	            self.api.current.api = url;
+	            api.current.offset = 0;
+
+	            self.$el.find(".players-list").empty();
+	            self.getRankings(url);
+
+	        });
+
+	        this.$el.find(".load-more").on("click", function(e) {
+
+	            e.preventDefault();
+
+	            offset = api.current.offset + 50;
+	            api.current.offset = offset;
+	            url = api.current.api+"&offset="+offset;
 
 	            self.getRankings(url);
 
@@ -81,6 +109,7 @@ define(function (require) {
 	    getRankings: function(url) {
 
 	        var self = this;
+	        console.log(this.api);
 
 	        $.ajax({
     			dataType: "json",
@@ -90,6 +119,7 @@ define(function (require) {
     				/* If user.json exists, store it via local storage
     				 * and init the Dashboard
     				 */
+    				console.log(data);
     				self.renderPlayersList(data);
     			},
     			error: function(error){
@@ -105,7 +135,7 @@ define(function (require) {
 
 	        var self = this;
 
-	        this.$el.find(".players-list").html(this.opt.templates["players-list"](model));
+	        this.$el.find(".players-list").append(this.opt.templates["players-list"](model));
 
 	        this.$el.find(".follow-link").on("click", function(e) {
 
