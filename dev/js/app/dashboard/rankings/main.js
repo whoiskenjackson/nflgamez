@@ -41,6 +41,11 @@ define(function (require) {
 	    	var self = this; // Keep track of scope
 	    	var rank;
 	    	
+	    	/* Rank Partial:
+	    	 *
+	    	 * NFL Ranking API provides rank in two formats. So this needs to be manually
+	    	 * created and manipulated to maintain consistency.
+	    	 */
 	    	Handlebars.registerHelper("rank", function(){
 	    	    
 	    	    rank = parseInt(self.api.current.rank) + 1;
@@ -50,7 +55,11 @@ define(function (require) {
                 
             });
 
-	        // Register Partial
+	        /* Following Partial:
+	    	 *
+	    	 * Creating the ability for handlebars to know if the user is following
+	    	 * a player.
+	    	 */
 	        Handlebars.registerHelper("following", function(playerID){
 
 	        	// If player is being followed
@@ -72,8 +81,10 @@ define(function (require) {
 	    
 	    renderPlayersList: function(model) {
 
-	        var self = this;
-
+	        var self = this; // Keep track of scope
+	        
+	        // Append the template. Important to not erasing previous players if
+	        // the load more button is clicked.
 	        this.$el.find(".players-list").append(this.opt.templates["players-list"](model));
 
 	        this.$el.find(".follow-link").on("click", function(e) {
@@ -92,7 +103,7 @@ define(function (require) {
 
 	        var self = this; // Keep track of scope
 	        var api = self.api; // Shorten reference to api's
-	        var offset = self.api.current.offset;
+	        var offset;
 	        var url;
 	        var position;
 
