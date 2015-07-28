@@ -2,14 +2,61 @@
 @import "theme/base/core";
 
 .screen-player {
-
+    .player-details {
+        padding: 40px 0 0;
+    }
+    
+    .player-details-image {
+        width: 200px;
+        margin: 0 auto;
+        padding: 0 40px;
+        
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+    }
+    
+    .player-details-info {
+        padding: 40px 0;
+        text-align: center;
+        color: $gray-04;
+        
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 25px;
+            font-weight: 100;
+            padding: 0 20px;
+            border-left: 1px solid $gray-04;
+            
+            &.player-name {
+                display: block;
+                padding-bottom: 20px;
+                color: $gray-03;
+            }
+            
+            &.player-name,
+            &.player-number {
+                border: none;
+            }
+            
+            &.player-following a {
+                color: $gray-04;
+                
+                &:hover,
+                &.following { color: $green-01; }
+            }
+        }
+    }
 }
 
-$map-team-logos: ("ARI","ATL","BAL","BUF","CAR","CHI","CIN","CLE","DAL","DEN","DET","GB","HOU","IND","JAC","KC","MIA","MIN","NE","NO","NYG","NYJ","OAK","PHI","PIT","SDC","SF","SEA","STL","TB","TEN","WAS");
+$map-team-logos: ("ARI","ATL","BAL","BUF","CAR","CHI","CIN","CLE","DAL","DEN","DET","GB","HOU","IND","JAC","KC","MIA","MIN","NE","NO","NYG","NYJ","OAK","PHI","PIT","SD","SF","SEA","STL","TB","TEN","WAS");
 
 @each $team in $map-team-logos {
     .team-#{$team} {
         background: url(../../images/#{$team}/logo-001.png) no-repeat right top;
-        background-size: auto 70%;
+        background-size: auto 50%;
     }
 }

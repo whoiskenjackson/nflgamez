@@ -103,7 +103,7 @@
     }
 }
 
-$map-team-logos: ("ARI","ATL","BAL","BUF","CAR","CHI","CIN","CLE","DAL","DEN","DET","GB","HOU","IND","JAC","KC","MIA","MIN","NE","NO","NYG","NYJ","OAK","PHI","PIT","SDC","SF","SEA","STL","TB","TEN","WAS");
+$map-team-logos: ("ARI","ATL","BAL","BUF","CAR","CHI","CIN","CLE","DAL","DEN","DET","GB","HOU","IND","JAC","KC","MIA","MIN","NE","NO","NYG","NYJ","OAK","PHI","PIT","SD","SF","SEA","STL","TB","TEN","WAS");
 
 @each $team in $map-team-logos {
     .team-#{$team} {

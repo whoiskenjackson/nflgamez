@@ -42,11 +42,32 @@ define(function (require) {
 
 	        // Do some magic
 	        this.getParams();
+	        this.registerPartials();
 	        this.renderTemplate();
 	        this.bindEvents();
 
-	        console.log(this.playerInfo);
+	    },
+	    
+	    registerPartials: function() {
+	        
+	        var self = this; // Keep track of scope
+	        
+	        /* Following Partial:
+	    	 *
+	    	 * Creating the ability for handlebars to know if the user is following
+	    	 * a player.
+	    	 */
+	        Handlebars.registerHelper("following", function(playerID){
 
+	        	// If player is being followed
+		        if(_.indexOf(self.model.players, playerID) > -1) {
+		        	
+		        	return "following"; // Return following class
+		            
+		        }
+
+		    });
+		    
 	    },
 
 	    renderTemplate: function() {
@@ -57,8 +78,21 @@ define(function (require) {
 
 	    renderPlayerInfo: function() {
 
-	    	console.log(this);
+	    	console.log(this.playerInfo);
+	    	
+	    	var self = this;
+	    	
 	    	this.$el.find(".player-info").html(this.opt.templates["player-info"](this.playerInfo));
+	    	
+	    	this.$el.find(".follow-link").on("click", function(e) {
+
+	            e.preventDefault();
+
+	            var element = $(this);
+	            var playerID = $(this).attr("data-id");
+	            self.followPlayer(element, playerID);
+
+	        });
 
 	    },
 
@@ -153,6 +187,27 @@ define(function (require) {
 	    	});
 
 	    	self.renderPlayerInfo();
+	    },
+	    
+	    followPlayer: function(elm, playerID) {
+
+	    	// If the player is not currently being followed
+	        if(_.indexOf(this.model.players, playerID) < 0) {
+
+	            this.model.players.push(playerID); // Add player ID to the players array
+	            elm.addClass('following'); // Add class of following to player
+
+	        } else {
+
+	            _.pull(this.model.players, playerID); // Remove player ID from the players array
+	            elm.removeClass('following'); // Remove class of following from the player
+
+	        }
+
+	        // Store the new model in local storage
+	        var data = JSON.stringify(this.model);
+	        localStorage.setItem("userData", data);
+
 	    }
 
 	}
