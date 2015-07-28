@@ -47,10 +47,24 @@ this["Handlebars"]["templates"]["player-info"] = Handlebars.template({"1":functi
     var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
 
   return "					<li>\n					    <p><strong>"
+    + alias3(((helper = (helper = helpers.timestamp || (depth0 != null ? depth0.timestamp : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"timestamp","hash":{},"data":data}) : helper)))
+    + " | "
     + alias3(((helper = (helper = helpers.body || (depth0 != null ? depth0.body : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"body","hash":{},"data":data}) : helper)))
     + "</strong></p>\n					    <p><strong>Analysis:</strong><br>"
     + alias3(((helper = (helper = helpers.analysis || (depth0 != null ? depth0.analysis : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"analysis","hash":{},"data":data}) : helper)))
     + "</p>\n					</li>\n";
+},"12":function(depth0,helpers,partials,data) {
+    var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
+
+  return "					<li>\n					    <a href=\"http://www.nfl.com/videos/nfl-game-highlights/"
+    + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
+    + "\" target=\"_blank\" title=\""
+    + alias3(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"title","hash":{},"data":data}) : helper)))
+    + "\">\n					        <img src=\""
+    + alias3(((helper = (helper = helpers.mediumPhotoUrl || (depth0 != null ? depth0.mediumPhotoUrl : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"mediumPhotoUrl","hash":{},"data":data}) : helper)))
+    + "\">\n					        <i class=\"fa fa-youtube-play\"></i>\n					        <strong>"
+    + alias3(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"title","hash":{},"data":data}) : helper)))
+    + "</strong>\n					    </a>\n					</li>\n";
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
     var stack1, helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
 
@@ -74,6 +88,8 @@ this["Handlebars"]["templates"]["player-info"] = Handlebars.template({"1":functi
     + ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.weeks : depth0),{"name":"each","hash":{},"fn":this.program(1, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
     + "			</div>\n		</div>\n	</div>\n</div>\n\n<div class=\"screen-row\">\n	<div class=\"screen-column column-4\">\n	    <div class=\"screen-item screen-item-notes\">\n			<div class=\"screen-item-header header-blue\">\n				<h3>Notes</h3>\n			</div>\n			<div class=\"screen-item-content\">\n				<ul>\n"
     + ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.notes : depth0),{"name":"each","hash":{},"fn":this.program(10, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+    + "				</ul>\n			</div>\n		</div>\n	</div>\n</div>\n\n<div class=\"screen-row\">\n	<div class=\"screen-column column-4\">\n	    <div class=\"screen-item screen-item-videos\">\n			<div class=\"screen-item-header header-blue\">\n				<h3>Videos</h3>\n			</div>\n			<div class=\"screen-item-content\">\n				<ul>\n"
+    + ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.videos : depth0),{"name":"each","hash":{},"fn":this.program(12, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
     + "				</ul>\n			</div>\n		</div>\n	</div>\n</div>";
 },"useData":true});
 
