@@ -21,26 +21,30 @@ this["Handlebars"]["templates"]["news"] = Handlebars.template({"compiler":[6,">=
     + "	</div>\n	<div class=\"screen-content\">\n		<div class=\"screen-row filter\">\n			<div class=\"screen-column column-1\">\n				<div class=\"screen-item\"><a href=\"#\"><span><i class=\"fa fa-newspaper-o\"></i></span> All News</a></div>\n			</div>\n			<div class=\"screen-column column-1\">\n				<div class=\"screen-item\"><a href=\"#\"><span><i class=\"fa fa-users\"></i></span> Team News</a></div>\n			</div>\n			<div class=\"screen-column column-1\">\n				<div class=\"screen-item\"><a href=\"#\"><span><i class=\"fa fa-user\"></i></span> Player News</a></div>\n			</div>\n			<div class=\"screen-column column-1\">\n				<div class=\"screen-item\"><a href=\"#\"><span><i class=\"fa fa-globe\"></i></span> News Outlets</a></div>\n			</div>\n		</div>\n		<div class=\"screen-row\">\n			<div class=\"screen-column column-2\">\n				<div class=\"screen-item\">\n					<div class=\"screen-item-header\">\n						<a href=\"http://www.rotoworld.com/player/nfl/1813/philip-rivers\">\n							<img src=\"images/chargers/logo-001.png\"/>\n							<h3>Rivers appears poised to play out contract yr - Philip Rivers | SD</h3>\n						</a>\n					</div>\n				</div>\n			</div>\n			<div class=\"screen-column column-2\">\n				<div class=\"screen-item\">\n					<div class=\"screen-item-header\">\n						<a href=\"http://www.rotoworld.com/player/nfl/8764/josh-hill\">\n							<img src=\"images/saints/logo-001.png\"/>\n							<h3>Saints will use 'committee' to replace Graham - Josh Hill | NO</h3>\n						</a>\n					</div>\n				</div>\n			</div>\n		</div>\n		<div class=\"screen-row\">\n			<div class=\"screen-column column-2\">\n				<div class=\"screen-item\">\n					<div class=\"screen-item-header\">\n						<a href=\"http://www.rotoworld.com/player/nfl/1813/philip-rivers\">\n							<img src=\"images/chargers/logo-001.png\"/>\n							<h3>Rivers appears poised to play out contract yr - Philip Rivers | SD</h3>\n						</a>\n					</div>\n				</div>\n			</div>\n			<div class=\"screen-column column-2\">\n				<div class=\"screen-item\">\n					<div class=\"screen-item-header\">\n						<a href=\"http://www.rotoworld.com/player/nfl/8764/josh-hill\">\n							<img src=\"images/saints/logo-001.png\"/>\n							<h3>Saints will use 'committee' to replace Graham - Josh Hill | NO</h3>\n						</a>\n					</div>\n				</div>\n			</div>\n		</div>\n	</div>\n</div>";
 },"usePartial":true,"useData":true});
 
-this["Handlebars"]["templates"]["player"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    var stack1, helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
+this["Handlebars"]["templates"]["player-info"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+    var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
 
-  return "<div class=\"screen-player screen-main\">\n	<header class=\"header\">\n		<h1>Dashboard</h1>\n		<h2>Hello, <strong>"
-    + alias3(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"name","hash":{},"data":data}) : helper)))
-    + "</strong><a href=\"preferences.html\"><i class=\"fa fa-cogs\"></i></a></h2>\n	</header>\n	<div class=\"sidebar\">\n"
-    + ((stack1 = this.invokePartial(partials.sidebar,depth0,{"name":"sidebar","data":data,"indent":"\t\t","helpers":helpers,"partials":partials})) != null ? stack1 : "")
-    + "	</div>\n	<div class=\"screen-content\">\n		<div class=\"screen-row\">\n			<div class=\"screen-column column-4\">\n				<div class=\"screen-item\">\n				    <div class=\"player-image team-"
+  return "<div class=\"screen-row\">\n	<div class=\"screen-column column-4\">\n		<div class=\"screen-item\">\n		    <div class=\"player-image team-"
     + alias3(((helper = (helper = helpers.teamAbbr || (depth0 != null ? depth0.teamAbbr : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"teamAbbr","hash":{},"data":data}) : helper)))
     + "\"><img src=\"http://static.nfl.com/static/content/public/static/img/fantasy/transparent/200x200/"
     + alias3(((helper = (helper = helpers.esbid || (depth0 != null ? depth0.esbid : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"esbid","hash":{},"data":data}) : helper)))
-    + ".png\"></div>\n        			<div class=\"player-name\">"
-    + alias3(((helper = (helper = helpers.firstName || (depth0 != null ? depth0.firstName : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"firstName","hash":{},"data":data}) : helper)))
-    + " "
-    + alias3(((helper = (helper = helpers.lastName || (depth0 != null ? depth0.lastName : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"lastName","hash":{},"data":data}) : helper)))
-    + "</div>\n        			<div class=\"player-position\">"
+    + ".png\"></div>\n			<div class=\"player-name\">"
+    + alias3(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"name","hash":{},"data":data}) : helper)))
+    + "</div>\n			<div class=\"player-position\">"
     + alias3(((helper = (helper = helpers.position || (depth0 != null ? depth0.position : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"position","hash":{},"data":data}) : helper)))
-    + "</div>\n        			<div class=\"player-team\">"
+    + "</div>\n			<div class=\"player-team\">"
     + alias3(((helper = (helper = helpers.teamAbbr || (depth0 != null ? depth0.teamAbbr : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"teamAbbr","hash":{},"data":data}) : helper)))
-    + "</div>\n				</div>\n			</div>\n		</div>\n	</div>\n</div>";
+    + "</div>\n		</div>\n	</div>\n</div>";
+},"useData":true});
+
+this["Handlebars"]["templates"]["player"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+    var stack1, helper;
+
+  return "<div class=\"screen-player screen-main\">\n	<header class=\"header\">\n		<h1>Dashboard</h1>\n		<h2>Hello, <strong>"
+    + this.escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"name","hash":{},"data":data}) : helper)))
+    + "</strong><a href=\"preferences.html\"><i class=\"fa fa-cogs\"></i></a></h2>\n	</header>\n	<div class=\"sidebar\">\n"
+    + ((stack1 = this.invokePartial(partials.sidebar,depth0,{"name":"sidebar","data":data,"indent":"\t\t","helpers":helpers,"partials":partials})) != null ? stack1 : "")
+    + "	</div>\n	<div class=\"screen-content player-info\"></div>\n</div>";
 },"usePartial":true,"useData":true});
 
 this["Handlebars"]["templates"]["players-list"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
