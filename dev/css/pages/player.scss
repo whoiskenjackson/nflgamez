@@ -93,6 +93,38 @@
             + li { border: none; }
         }
     }
+    
+    .screen-item-notes {
+        ul {
+            font-size: 0;
+        }
+        
+        li {
+            width: 50%;
+            font-size: 15px;
+            font-weight: 300;
+            display: inline-block;
+            vertical-align: top;
+            border-top: none;
+            padding: 0 0 20px;
+            
+            &:first-child {
+                padding: 0 0 20px;
+            }
+            
+            p {
+                display: block;
+                margin: 0;
+                padding: 0 20px 20px;
+                color: $gray-03;
+                
+                strong {
+                    color: $black-01;
+                }
+            }
+            
+        }
+    }
 }
 
 $map-team-logos: ("ARI","ATL","BAL","BUF","CAR","CHI","CIN","CLE","DAL","DEN","DET","GB","HOU","IND","JAC","KC","MIA","MIN","NE","NO","NYG","NYJ","OAK","PHI","PIT","SD","SF","SEA","STL","TB","TEN","WAS");

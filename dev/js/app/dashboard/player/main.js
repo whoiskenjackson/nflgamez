@@ -17,8 +17,7 @@ define(function (require) {
         		    teamAbbr: null,
         		    season: 2014,
         		    statType: "seasonStats",
-        		    week: 1,
-        		    count: 3
+        		    week: 1
         		},
         		api: {
         			offset: 0,
@@ -210,9 +209,11 @@ define(function (require) {
 	    	    }
 	    	    
 	    	    count++;
+	    	    
 	    	}
 
 	    	self.renderPlayerInfo();
+	    	
 	    },
 	    
 	    followPlayer: function(elm, playerID) {

@@ -46,9 +46,9 @@ this["Handlebars"]["templates"]["player-info"] = Handlebars.template({"1":functi
 },"10":function(depth0,helpers,partials,data) {
     var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
 
-  return "					<li>\n					    <p>"
+  return "					<li>\n					    <p><strong>"
     + alias3(((helper = (helper = helpers.body || (depth0 != null ? depth0.body : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"body","hash":{},"data":data}) : helper)))
-    + "</p>\n					    <p><strong>Analysis:</strong><br>"
+    + "</strong></p>\n					    <p><strong>Analysis:</strong><br>"
     + alias3(((helper = (helper = helpers.analysis || (depth0 != null ? depth0.analysis : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"analysis","hash":{},"data":data}) : helper)))
     + "</p>\n					</li>\n";
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
