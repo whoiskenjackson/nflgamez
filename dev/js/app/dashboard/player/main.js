@@ -180,19 +180,21 @@ define(function (require) {
 
 	    assemblePlayerDetails: function(self, playerData) {
 
-	    	playerData = playerData.players[0];
+	    	playerData = playerData.players[0]; // Get player data
 
+	    	// Assign each value and key to playerInfo model
 	    	_.forEach(playerData, function(value, key) {
 
 	    		_.set(self.playerInfo, key, value);
 
 	    	});
 	    	
-	    	var weeks = self.playerInfo.weeks;
+	    	var weeks = self.playerInfo.weeks; // Find Schedule
 	    	var weeksLength = weeks.length;
 	    	var i = 0;
 	    	var count = 1;
 	    	
+	    	// For each week assign an open and close tag
 	    	for(i; i < weeksLength; i++) {
 	    	    
 	    	    if(count == 1) {
@@ -212,7 +214,7 @@ define(function (require) {
 	    	    
 	    	}
 
-	    	self.renderPlayerInfo();
+	    	self.renderPlayerInfo(); // Render the player info
 	    	
 	    },
 	    
