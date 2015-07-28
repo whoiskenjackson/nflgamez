@@ -16,7 +16,7 @@
 }
 /* line 21, player.scss */
 .screen-player .player-details-info {
-  padding: 40px 0;
+  padding: 40px 0 80px;
   text-align: center;
   color: #ccc;
 }
@@ -47,194 +47,240 @@
 .screen-player .player-details-info span.player-following a:hover, .screen-player .player-details-info span.player-following a.following {
   color: #45db5e;
 }
+/* line 54, player.scss */
+.screen-player .screen-item-schedule {
+  background: #1fb5ac;
+  color: #fff;
+  font-weight: 100;
+  padding: 20px;
+  font-size: 0;
+}
+/* line 61, player.scss */
+.screen-player .screen-item-schedule h3 {
+  font-weight: 100;
+  display: block;
+  margin: 0;
+  padding: 0 0 20px;
+  font-size: 20px;
+}
+/* line 69, player.scss */
+.screen-player .screen-item-schedule ul, .screen-player .screen-item-schedule li {
+  margin: 0;
+  padding: 0;
+}
+/* line 74, player.scss */
+.screen-player .screen-item-schedule ul {
+  display: inline-block;
+  width: 16.666667%;
+  vertical-align: top;
+}
+/* line 80, player.scss */
+.screen-player .screen-item-schedule li {
+  border: none;
+  font-size: 15px;
+  padding-top: 10px;
+}
+/* line 85, player.scss */
+.screen-player .screen-item-schedule li:first-child {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* line 91, player.scss */
+.screen-player .screen-item-schedule .headline {
+  border: none;
+}
+/* line 93, player.scss */
+.screen-player .screen-item-schedule .headline + li {
+  border: none;
+}
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-ARI {
   background: url(../../images/ARI/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-ATL {
   background: url(../../images/ATL/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-BAL {
   background: url(../../images/BAL/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-BUF {
   background: url(../../images/BUF/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-CAR {
   background: url(../../images/CAR/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-CHI {
   background: url(../../images/CHI/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-CIN {
   background: url(../../images/CIN/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-CLE {
   background: url(../../images/CLE/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-DAL {
   background: url(../../images/DAL/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-DEN {
   background: url(../../images/DEN/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-DET {
   background: url(../../images/DET/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-GB {
   background: url(../../images/GB/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-HOU {
   background: url(../../images/HOU/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-IND {
   background: url(../../images/IND/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-JAC {
   background: url(../../images/JAC/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-KC {
   background: url(../../images/KC/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-MIA {
   background: url(../../images/MIA/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-MIN {
   background: url(../../images/MIN/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-NE {
   background: url(../../images/NE/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-NO {
   background: url(../../images/NO/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-NYG {
   background: url(../../images/NYG/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-NYJ {
   background: url(../../images/NYJ/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-OAK {
   background: url(../../images/OAK/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-PHI {
   background: url(../../images/PHI/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-PIT {
   background: url(../../images/PIT/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-SD {
   background: url(../../images/SD/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-SF {
   background: url(../../images/SF/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-SEA {
   background: url(../../images/SEA/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-STL {
   background: url(../../images/STL/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-TB {
   background: url(../../images/TB/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-TEN {
   background: url(../../images/TEN/logo-001.png) no-repeat right top;
   background-size: auto 50%;
 }
 
-/* line 58, player.scss */
+/* line 101, player.scss */
 .team-WAS {
   background: url(../../images/WAS/logo-001.png) no-repeat right top;
   background-size: auto 50%;

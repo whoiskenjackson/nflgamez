@@ -14,3 +14,44 @@
 		</div>
 	</div>
 </div>
+
+<div class="screen-row">
+	<div class="screen-column column-4">
+	    <div class="screen-item screen-item-schedule">
+			<div class="screen-item-content">
+				<h3>Schedule:</h3>
+				{{#each weeks}}
+				
+				{{#if open}}
+				<ul>
+				{{/if}}
+					<li>Wk {{id}}: {{#if opponent}}{{opponent}}{{else}}BYE{{/if}}</li>
+				{{#if close}}
+				</ul>
+				{{/if}}
+				
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="screen-row">
+	<div class="screen-column column-4">
+	    <div class="screen-item screen-item-notes">
+			<div class="screen-item-header header-blue">
+				<h3>Notes</h3>
+			</div>
+			<div class="screen-item-content">
+				<ul>
+				    {{#each notes}}
+					<li>
+					    <p>{{body}}</p>
+					    <p><strong>Analysis:</strong><br>{{analysis}}</p>
+					</li>
+					{{/each}}
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

@@ -17,7 +17,8 @@ define(function (require) {
         		    teamAbbr: null,
         		    season: 2014,
         		    statType: "seasonStats",
-        		    week: 1
+        		    week: 1,
+        		    count: 3
         		},
         		api: {
         			offset: 0,
@@ -41,9 +42,9 @@ define(function (require) {
 	        this.playerInfo = this.opt.playerInfo;
 
 	        // Do some magic
-	        this.getParams();
-	        this.registerPartials();
 	        this.renderTemplate();
+	        this.registerPartials();
+	        this.getParams();
 	        this.bindEvents();
 
 	    },
@@ -80,10 +81,12 @@ define(function (require) {
 
 	    	console.log(this.playerInfo);
 	    	
-	    	var self = this;
+	    	var self = this; // Keep track of scope
 	    	
+	    	// Render Template
 	    	this.$el.find(".player-info").html(this.opt.templates["player-info"](this.playerInfo));
 	    	
+	    	// When a user clicks on the following link
 	    	this.$el.find(".follow-link").on("click", function(e) {
 
 	            e.preventDefault();
@@ -185,6 +188,29 @@ define(function (require) {
 	    		_.set(self.playerInfo, key, value);
 
 	    	});
+	    	
+	    	var weeks = self.playerInfo.weeks;
+	    	var weeksLength = weeks.length;
+	    	var i = 0;
+	    	var count = 1;
+	    	
+	    	for(i; i < weeksLength; i++) {
+	    	    
+	    	    if(count == 1) {
+	    	        weeks[i].open = true;
+	    	    } else {
+	    	        weeks[i].open = false;
+	    	    }
+	    	    
+	    	    if(count == 3) {
+	    	        count = 0;
+	    	        weeks[i].close = true;
+	    	    } else {
+	    	        weeks[i].close = false;
+	    	    }
+	    	    
+	    	    count++;
+	    	}
 
 	    	self.renderPlayerInfo();
 	    },
