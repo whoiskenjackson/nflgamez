@@ -145,10 +145,14 @@
             
             a {
                 display: block;
-                position: relative;
                 padding: 0 10px;
                 color: $gray-03;
                 font-weight: 100;
+                
+                span {
+                    position: relative;
+                    display: block;
+                }
                 
                 img {
                     width: auto;

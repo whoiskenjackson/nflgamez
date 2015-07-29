@@ -60,9 +60,9 @@ this["Handlebars"]["templates"]["player-info"] = Handlebars.template({"1":functi
     + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
     + "\" target=\"_blank\" title=\""
     + alias3(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"title","hash":{},"data":data}) : helper)))
-    + "\">\n					        <img src=\""
+    + "\">\n					        <span>\n					            <img src=\""
     + alias3(((helper = (helper = helpers.mediumPhotoUrl || (depth0 != null ? depth0.mediumPhotoUrl : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"mediumPhotoUrl","hash":{},"data":data}) : helper)))
-    + "\">\n					        <i class=\"fa fa-youtube-play\"></i>\n					        <strong>"
+    + "\">\n					            <i class=\"fa fa-youtube-play\"></i>\n					        </span>\n					        <strong>"
     + alias3(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"title","hash":{},"data":data}) : helper)))
     + "</strong>\n					    </a>\n					</li>\n";
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
