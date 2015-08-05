@@ -17,7 +17,12 @@ define(function (require) {
         		    teamAbbr: null,
         		    season: 2014,
         		    statType: "seasonStats",
-        		    week: 1
+        		    week: 1,
+        		    seasons: 4,
+        		    status: {
+        		        playerDetails: false,
+        		        playerStats: false
+        		    }
         		},
         		api: {
         			offset: 0,
@@ -132,6 +137,7 @@ define(function (require) {
 	        }
 
 	        this.getPlayerDetails();
+	        this.getPlayerSeasonStats();
 
 	    },
 
@@ -152,6 +158,30 @@ define(function (require) {
 
 	    	 this.getStats(url, callbackFunction);
 
+	    },
+	    
+	    getPlayerSeasonStats: function() {
+	        
+	        /* Player Stats:
+			 *
+	    	 * API Info: http://api.fantasy.nfl.com/v1/docs/service?serviceName=playersStats
+	    	 *
+	    	 * Params:
+	    	 *
+	    	 * statType - seasonStats - The type of stats your want which can be: seasonStats, weekStats,
+	    	 *                          seasonProjectedStats, weekProjectedStats, twoWeekStats, fourWeekStats
+	    	 * season - current season - The season you want stats displayed for each player
+	    	 * week - current week - The week you want stats displayed for each player
+	    	 * position - all positions - The player position you want. QB, RB, WR, TE, K , DEF, DL, LB, DB.
+	    	 *                            Only supports PPR for RB-ppr, WR-ppr, and TE-ppr.
+	    	 */
+	    	 
+	    	 var self = this; // Keep track of scope.
+	    	 var url = this.api.playersStats + "&statType=" + this.playerInfo.statType + "&position=" + this.playerInfo.position;
+	    	 var callbackFunction = this.assemblePlayerStats;
+	    	 
+	    	 this.getStats(url, callbackFunction);
+	        
 	    },
 
 	    getStats: function(url, callbackFunction) {
@@ -214,8 +244,13 @@ define(function (require) {
 	    	    
 	    	}
 
+	    	self.playerInfo.status.playerDetails = true;
 	    	self.renderPlayerInfo(); // Render the player info
 	    	
+	    },
+	    
+	    assemblePlayerStats: function() {
+	        
 	    },
 	    
 	    followPlayer: function(elm, playerID) {
